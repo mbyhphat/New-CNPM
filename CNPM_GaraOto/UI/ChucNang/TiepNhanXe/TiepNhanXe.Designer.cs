@@ -41,8 +41,8 @@
             lbDiaChi = new Label();
             lbSoDienThoai = new Label();
             lbNgayTiepNhan = new Label();
-            button_XacNhan = new Button();
-            button1 = new Button();
+            btnXacNhan = new Button();
+            btnDong = new Button();
             contextMenuStrip1 = new ContextMenuStrip(components);
             lbEmail = new Label();
             tbEmail = new TextBox();
@@ -184,31 +184,31 @@
             lbNgayTiepNhan.TabIndex = 14;
             lbNgayTiepNhan.Text = "Ngày tiếp nhận (Ví dụ: 2024/12/04)";
             // 
-            // button_XacNhan
+            // btnXacNhan
             // 
-            button_XacNhan.BackColor = Color.FromArgb(66, 133, 244);
-            button_XacNhan.Font = new Font("Arial", 16F);
-            button_XacNhan.ForeColor = Color.White;
-            button_XacNhan.Location = new Point(189, 505);
-            button_XacNhan.Name = "button_XacNhan";
-            button_XacNhan.Size = new Size(400, 47);
-            button_XacNhan.TabIndex = 7;
-            button_XacNhan.Text = "XÁC NHẬN";
-            button_XacNhan.UseVisualStyleBackColor = false;
-            button_XacNhan.Click += button_XacNhan_Click;
+            btnXacNhan.BackColor = Color.FromArgb(66, 133, 244);
+            btnXacNhan.Font = new Font("Arial", 16F);
+            btnXacNhan.ForeColor = Color.White;
+            btnXacNhan.Location = new Point(189, 505);
+            btnXacNhan.Name = "btnXacNhan";
+            btnXacNhan.Size = new Size(400, 47);
+            btnXacNhan.TabIndex = 7;
+            btnXacNhan.Text = "XÁC NHẬN";
+            btnXacNhan.UseVisualStyleBackColor = false;
+            btnXacNhan.Click += button_XacNhan_Click;
             // 
-            // button1
+            // btnDong
             // 
-            button1.BackColor = Color.Black;
-            button1.Font = new Font("Arial", 16F);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(189, 558);
-            button1.Name = "button1";
-            button1.Size = new Size(400, 45);
-            button1.TabIndex = 8;
-            button1.Text = "ĐÓNG";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnDong.BackColor = Color.Black;
+            btnDong.Font = new Font("Arial", 16F);
+            btnDong.ForeColor = Color.White;
+            btnDong.Location = new Point(189, 558);
+            btnDong.Name = "btnDong";
+            btnDong.Size = new Size(400, 45);
+            btnDong.TabIndex = 8;
+            btnDong.Text = "ĐÓNG";
+            btnDong.UseVisualStyleBackColor = false;
+            btnDong.Click += button1_Click;
             // 
             // contextMenuStrip1
             // 
@@ -330,8 +330,8 @@
             Controls.Add(cbHieuXe);
             Controls.Add(lbEmail);
             Controls.Add(tbEmail);
-            Controls.Add(button1);
-            Controls.Add(button_XacNhan);
+            Controls.Add(btnDong);
+            Controls.Add(btnXacNhan);
             Controls.Add(lbNgayTiepNhan);
             Controls.Add(lbSoDienThoai);
             Controls.Add(lbDiaChi);
@@ -374,8 +374,8 @@
         private Label lbDiaChi;
         private Label lbSoDienThoai;
         private Label lbNgayTiepNhan;
-        private Button button_XacNhan;
-        private Button button1;
+        private Button btnXacNhan;
+        private Button btnDong;
         private ContextMenuStrip contextMenuStrip1;
         private Label lbEmail;
         private TextBox tbEmail;
