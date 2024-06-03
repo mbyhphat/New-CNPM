@@ -28,27 +28,27 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new Button();
+            btnHuy = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txbTenvtpt = new TextBox();
+            txbGia = new TextBox();
+            btnXacnhan = new Button();
             SuspendLayout();
             // 
-            // button2
+            // btnHuy
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button2.AutoSize = true;
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(270, 177);
-            button2.Name = "button2";
-            button2.Size = new Size(157, 34);
-            button2.TabIndex = 4;
-            button2.Text = "Hủy ";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnHuy.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnHuy.AutoSize = true;
+            btnHuy.BackColor = Color.FromArgb(64, 64, 64);
+            btnHuy.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHuy.ForeColor = Color.White;
+            btnHuy.Location = new Point(270, 177);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(157, 34);
+            btnHuy.TabIndex = 4;
+            btnHuy.Text = "Hủy ";
+            btnHuy.UseVisualStyleBackColor = false;
+            btnHuy.Click += button2_Click;
             // 
             // label1
             // 
@@ -62,52 +62,52 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             label1.Text = "THÊM PHỤ TÙNG";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txbTenvtpt
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(2, 74);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Tên phụ tùng ";
-            textBox1.Size = new Size(463, 27);
-            textBox1.TabIndex = 1;
-            textBox1.TabStop = false;
+            txbTenvtpt.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txbTenvtpt.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbTenvtpt.Location = new Point(2, 74);
+            txbTenvtpt.Name = "txbTenvtpt";
+            txbTenvtpt.PlaceholderText = "Tên phụ tùng ";
+            txbTenvtpt.Size = new Size(463, 27);
+            txbTenvtpt.TabIndex = 1;
+            txbTenvtpt.TabStop = false;
             // 
-            // textBox2
+            // txbGia
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(2, 116);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Giá";
-            textBox2.Size = new Size(463, 27);
-            textBox2.TabIndex = 2;
-            textBox2.TabStop = false;
+            txbGia.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txbGia.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbGia.Location = new Point(2, 116);
+            txbGia.Name = "txbGia";
+            txbGia.PlaceholderText = "Giá";
+            txbGia.Size = new Size(463, 27);
+            txbGia.TabIndex = 2;
+            txbGia.TabStop = false;
             // 
-            // button1
+            // btnXacnhan
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.AutoSize = true;
-            button1.BackColor = Color.DodgerBlue;
-            button1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Red;
-            button1.Location = new Point(54, 177);
-            button1.Name = "button1";
-            button1.Size = new Size(157, 34);
-            button1.TabIndex = 3;
-            button1.Text = "Xác nhận ";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXacnhan.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnXacnhan.AutoSize = true;
+            btnXacnhan.BackColor = Color.DodgerBlue;
+            btnXacnhan.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXacnhan.ForeColor = Color.Red;
+            btnXacnhan.Location = new Point(54, 177);
+            btnXacnhan.Name = "btnXacnhan";
+            btnXacnhan.Size = new Size(157, 34);
+            btnXacnhan.TabIndex = 3;
+            btnXacnhan.Text = "Xác nhận ";
+            btnXacnhan.UseVisualStyleBackColor = false;
+            btnXacnhan.Click += button1_Click;
             // 
             // ThemPhuTung
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(467, 223);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnHuy);
+            Controls.Add(btnXacnhan);
+            Controls.Add(txbGia);
+            Controls.Add(txbTenvtpt);
             Controls.Add(label1);
             Name = "ThemPhuTung";
             StartPosition = FormStartPosition.CenterScreen;
@@ -119,9 +119,9 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private TextBox txbTenvtpt;
+        private TextBox txbGia;
+        private Button btnXacnhan;
+        private Button btnHuy;
     }
 }

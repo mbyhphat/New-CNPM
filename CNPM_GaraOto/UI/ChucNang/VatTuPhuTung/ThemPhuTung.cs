@@ -23,7 +23,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         {
             if (AccountDAO.Instance.getVaitro())
             {
-                if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+                if (string.IsNullOrEmpty(txbTenvtpt.Text) || string.IsNullOrEmpty(txbGia.Text))
                 {
                     MessageBox.Show("Vui lòng nhập đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -33,8 +33,8 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
                     if (messageBox == DialogResult.Yes)
                     {
 
-                        string tenvtpt = textBox1.Text.ToString();
-                        string dgn = textBox2.Text.ToString();
+                        string tenvtpt = txbTenvtpt.Text.ToString();
+                        string dgn = txbGia.Text.ToString();
                         Decimal dongianhap = Decimal.Parse(dgn);
                         ThemPhuTunDAO.Instance.ThemVatTuPhuTung(tenvtpt, dongianhap);
                         DataAdded?.Invoke(this, EventArgs.Empty);

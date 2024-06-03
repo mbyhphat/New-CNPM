@@ -34,8 +34,8 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             dataGridView1 = new DataGridView();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
+            btnInbaocao = new Button();
+            btnQuaylai = new Button();
             panel2 = new Panel();
             lbDoanhthu = new Label();
             panel3 = new Panel();
@@ -105,38 +105,38 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button2);
+            flowLayoutPanel1.Controls.Add(btnInbaocao);
+            flowLayoutPanel1.Controls.Add(btnQuaylai);
             flowLayoutPanel1.Location = new Point(478, 512);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(322, 39);
             flowLayoutPanel1.TabIndex = 4;
             // 
-            // button1
+            // btnInbaocao
             // 
-            button1.BackColor = SystemColors.HotTrack;
-            button1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(157, 29);
-            button1.TabIndex = 0;
-            button1.Text = "In Báo Cáo";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnInbaocao.BackColor = SystemColors.HotTrack;
+            btnInbaocao.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnInbaocao.ForeColor = Color.White;
+            btnInbaocao.Location = new Point(3, 3);
+            btnInbaocao.Name = "btnInbaocao";
+            btnInbaocao.Size = new Size(157, 29);
+            btnInbaocao.TabIndex = 0;
+            btnInbaocao.Text = "In Báo Cáo";
+            btnInbaocao.UseVisualStyleBackColor = false;
+            btnInbaocao.Click += button1_Click;
             // 
-            // button2
+            // btnQuaylai
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(166, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Quay lại";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnQuaylai.BackColor = SystemColors.ActiveCaptionText;
+            btnQuaylai.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuaylai.ForeColor = Color.White;
+            btnQuaylai.Location = new Point(166, 3);
+            btnQuaylai.Name = "btnQuaylai";
+            btnQuaylai.Size = new Size(94, 29);
+            btnQuaylai.TabIndex = 1;
+            btnQuaylai.Text = "Quay lại";
+            btnQuaylai.UseVisualStyleBackColor = false;
+            btnQuaylai.Click += button2_Click;
             // 
             // panel2
             // 
@@ -228,8 +228,8 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         private DataGridView dataGridView1;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Button button1;
-        private Button button2;
+        private Button btnInbaocao;
+        private Button btnQuaylai;
         private Panel panel2;
         private Label lbDoanhthu;
         private Panel panel3;
