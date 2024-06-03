@@ -23,7 +23,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
 
         void LoadKhoPhuTung()
         {
-            dataGridView1.DataSource = KhoPhuTungDAO.Instance.GetVatTuPhuTung();
+            dtgvVTPT.DataSource = KhoPhuTungDAO.Instance.GetVatTuPhuTung();
         }
 
         void AddKhoPTBinding()
@@ -34,11 +34,11 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             txbDongianhap.DataBindings.Clear();
             txbSoluongton.DataBindings.Clear();
 
-            txbMavtpt.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "MaVatTuPhuTung", true, DataSourceUpdateMode.Never));
-            txbTenvtpt.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "TenVatTuPhuTung", true, DataSourceUpdateMode.Never));
-            txbDongiaban.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "DonGiaBan", true, DataSourceUpdateMode.Never));
-            txbDongianhap.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "DonGiaNhap", true, DataSourceUpdateMode.Never));
-            txbSoluongton.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "SoLuongTon", true, DataSourceUpdateMode.Never));
+            txbMavtpt.DataBindings.Add(new Binding("Text", dtgvVTPT.DataSource, "MaVatTuPhuTung", true, DataSourceUpdateMode.Never));
+            txbTenvtpt.DataBindings.Add(new Binding("Text", dtgvVTPT.DataSource, "TenVatTuPhuTung", true, DataSourceUpdateMode.Never));
+            txbDongiaban.DataBindings.Add(new Binding("Text", dtgvVTPT.DataSource, "DonGiaBan", true, DataSourceUpdateMode.Never));
+            txbDongianhap.DataBindings.Add(new Binding("Text", dtgvVTPT.DataSource, "DonGiaNhap", true, DataSourceUpdateMode.Never));
+            txbSoluongton.DataBindings.Add(new Binding("Text", dtgvVTPT.DataSource, "SoLuongTon", true, DataSourceUpdateMode.Never));
         }
         List<VatTuPhuTung_DTO> SearchPhuTungByName(string name)
         {
@@ -48,7 +48,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = SearchPhuTungByName(txbSearch.Text);
+            dtgvVTPT.DataSource = SearchPhuTungByName(txbSearch.Text);
             AddKhoPTBinding();
         }
 

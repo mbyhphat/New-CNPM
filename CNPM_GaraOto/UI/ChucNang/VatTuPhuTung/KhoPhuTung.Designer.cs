@@ -30,12 +30,12 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         {
             textBox1 = new TextBox();
             txbSearch = new TextBox();
-            button1 = new Button();
+            btnThem = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button2 = new Button();
-            button4 = new Button();
+            btnSua = new Button();
+            btnNhap = new Button();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgvVTPT = new DataGridView();
             txbTenvtpt = new TextBox();
             label2 = new Label();
             txbDongianhap = new TextBox();
@@ -50,7 +50,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             btnSearch = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvVTPT).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,77 +77,77 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             txbSearch.TabIndex = 1;
             txbSearch.TabStop = false;
             // 
-            // button1
+            // btnThem
             // 
-            button1.BackColor = SystemColors.MenuHighlight;
-            button1.CausesValidation = false;
-            button1.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 34);
-            button1.TabIndex = 3;
-            button1.Text = "Thêm ";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnThem.BackColor = SystemColors.MenuHighlight;
+            btnThem.CausesValidation = false;
+            btnThem.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThem.ForeColor = Color.White;
+            btnThem.Location = new Point(3, 3);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(94, 34);
+            btnThem.TabIndex = 3;
+            btnThem.Text = "Thêm ";
+            btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += button1_Click;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button2);
-            flowLayoutPanel1.Controls.Add(button4);
+            flowLayoutPanel1.Controls.Add(btnThem);
+            flowLayoutPanel1.Controls.Add(btnSua);
+            flowLayoutPanel1.Controls.Add(btnNhap);
             flowLayoutPanel1.Location = new Point(395, 53);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(306, 37);
             flowLayoutPanel1.TabIndex = 7;
             // 
-            // button2
+            // btnSua
             // 
-            button2.BackColor = SystemColors.MenuHighlight;
-            button2.CausesValidation = false;
-            button2.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(103, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 34);
-            button2.TabIndex = 4;
-            button2.Text = "Sửa ";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnSua.BackColor = SystemColors.MenuHighlight;
+            btnSua.CausesValidation = false;
+            btnSua.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSua.ForeColor = Color.White;
+            btnSua.Location = new Point(103, 3);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(94, 34);
+            btnSua.TabIndex = 4;
+            btnSua.Text = "Sửa ";
+            btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += button2_Click;
             // 
-            // button4
+            // btnNhap
             // 
-            button4.BackColor = Color.Lime;
-            button4.CausesValidation = false;
-            button4.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(203, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 34);
-            button4.TabIndex = 6;
-            button4.Text = "Nhập";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            btnNhap.BackColor = Color.Lime;
+            btnNhap.CausesValidation = false;
+            btnNhap.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnNhap.ForeColor = Color.Black;
+            btnNhap.Location = new Point(203, 3);
+            btnNhap.Name = "btnNhap";
+            btnNhap.Size = new Size(94, 34);
+            btnNhap.TabIndex = 6;
+            btnNhap.Text = "Nhập";
+            btnNhap.UseVisualStyleBackColor = false;
+            btnNhap.Click += button4_Click;
             // 
             // panel1
             // 
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgvVTPT);
             panel1.Location = new Point(1, 242);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 292);
             panel1.TabIndex = 8;
             // 
-            // dataGridView1
+            // dtgvVTPT
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(797, 289);
-            dataGridView1.TabIndex = 0;
+            dtgvVTPT.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvVTPT.BackgroundColor = SystemColors.Control;
+            dtgvVTPT.BorderStyle = BorderStyle.None;
+            dtgvVTPT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvVTPT.Location = new Point(0, 3);
+            dtgvVTPT.Name = "dtgvVTPT";
+            dtgvVTPT.RowHeadersWidth = 51;
+            dtgvVTPT.Size = new Size(797, 289);
+            dtgvVTPT.TabIndex = 0;
             // 
             // txbTenvtpt
             // 
@@ -173,6 +173,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             txbDongianhap.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txbDongianhap.Location = new Point(520, 44);
             txbDongianhap.Name = "txbDongianhap";
+            txbDongianhap.ReadOnly = true;
             txbDongianhap.Size = new Size(125, 28);
             txbDongianhap.TabIndex = 14;
             // 
@@ -289,7 +290,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
             Text = "Kho phụ tùng";
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvVTPT).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -300,8 +301,8 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
 
         private TextBox textBox1;
         private TextBox txbSearch;
-        private Button button1;
-        private Button button2;
+        private Button btnThem;
+        private Button btnSua;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private TextBox txbTenvtpt;
@@ -313,8 +314,8 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         private TextBox txbSoluongton;
         private Label label5;
         private Panel panel2;
-        private DataGridView dataGridView1;
-        private Button button4;
+        private DataGridView dtgvVTPT;
+        private Button btnNhap;
         private TextBox txbMavtpt;
         private Label label1;
         private Button btnSearch;

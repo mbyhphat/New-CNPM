@@ -30,13 +30,13 @@
         {
             label_NhapPhuTung = new Label();
             txbSoluong = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            comboBox1 = new ComboBox();
+            btnXacnhan = new Button();
+            btnHuy = new Button();
+            cbTenvtpt = new ComboBox();
             panel1 = new Panel();
             txbMavtpt = new TextBox();
             txbDongianhap = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            dtpkNgaynhapvtpt = new DateTimePicker();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,55 +62,55 @@
             txbSoluong.Size = new Size(388, 28);
             txbSoluong.TabIndex = 4;
             // 
-            // button1
+            // btnXacnhan
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button1.BackColor = Color.FromArgb(66, 133, 244);
-            button1.Font = new Font("Arial", 14F);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(5, 270);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 82);
-            button1.TabIndex = 5;
-            button1.Text = "XÁC NHẬN";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXacnhan.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnXacnhan.BackColor = Color.FromArgb(66, 133, 244);
+            btnXacnhan.Font = new Font("Arial", 14F);
+            btnXacnhan.ForeColor = Color.White;
+            btnXacnhan.Location = new Point(5, 270);
+            btnXacnhan.Margin = new Padding(3, 4, 3, 4);
+            btnXacnhan.Name = "btnXacnhan";
+            btnXacnhan.Size = new Size(144, 82);
+            btnXacnhan.TabIndex = 5;
+            btnXacnhan.Text = "XÁC NHẬN";
+            btnXacnhan.UseVisualStyleBackColor = false;
+            btnXacnhan.Click += button1_Click;
             // 
-            // button2
+            // btnHuy
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.BackColor = Color.Black;
-            button2.Font = new Font("Arial", 14F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(249, 270);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(144, 82);
-            button2.TabIndex = 6;
-            button2.Text = "HỦY";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnHuy.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnHuy.BackColor = Color.Black;
+            btnHuy.Font = new Font("Arial", 14F);
+            btnHuy.ForeColor = Color.White;
+            btnHuy.Location = new Point(249, 270);
+            btnHuy.Margin = new Padding(3, 4, 3, 4);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(144, 82);
+            btnHuy.TabIndex = 6;
+            btnHuy.Text = "HỦY";
+            btnHuy.UseVisualStyleBackColor = false;
+            btnHuy.Click += button2_Click;
             // 
-            // comboBox1
+            // cbTenvtpt
             // 
-            comboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            comboBox1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(3, 3);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(388, 29);
-            comboBox1.TabIndex = 9;
-            comboBox1.Text = "Tên vật tư phụ tùng";
-            comboBox1.SelectedValueChanged += comboBox1_SelectedValueChanged;
+            cbTenvtpt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            cbTenvtpt.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbTenvtpt.FormattingEnabled = true;
+            cbTenvtpt.Location = new Point(3, 3);
+            cbTenvtpt.Name = "cbTenvtpt";
+            cbTenvtpt.Size = new Size(388, 29);
+            cbTenvtpt.TabIndex = 9;
+            cbTenvtpt.Text = "Tên vật tư phụ tùng";
+            cbTenvtpt.SelectedValueChanged += comboBox1_SelectedValueChanged;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Controls.Add(txbMavtpt);
             panel1.Controls.Add(txbDongianhap);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(dtpkNgaynhapvtpt);
+            panel1.Controls.Add(cbTenvtpt);
             panel1.Controls.Add(txbSoluong);
             panel1.Location = new Point(2, 71);
             panel1.Name = "panel1";
@@ -137,16 +137,16 @@
             txbDongianhap.Size = new Size(388, 28);
             txbDongianhap.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dtpkNgaynhapvtpt
             // 
-            dateTimePicker1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(3, 80);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(388, 28);
-            dateTimePicker1.TabIndex = 10;
+            dtpkNgaynhapvtpt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dtpkNgaynhapvtpt.CustomFormat = "dd/MM/yyyy";
+            dtpkNgaynhapvtpt.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpkNgaynhapvtpt.Format = DateTimePickerFormat.Custom;
+            dtpkNgaynhapvtpt.Location = new Point(3, 80);
+            dtpkNgaynhapvtpt.Name = "dtpkNgaynhapvtpt";
+            dtpkNgaynhapvtpt.Size = new Size(388, 28);
+            dtpkNgaynhapvtpt.TabIndex = 10;
             // 
             // NhapPhuTung
             // 
@@ -154,8 +154,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(397, 363);
             Controls.Add(panel1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnHuy);
+            Controls.Add(btnXacnhan);
             Controls.Add(label_NhapPhuTung);
             Margin = new Padding(3, 4, 3, 4);
             Name = "NhapPhuTung";
@@ -170,11 +170,11 @@
 
         private Label label_NhapPhuTung;
         private TextBox txbSoluong;
-        private Button button1;
-        private Button button2;
-        private ComboBox comboBox1;
+        private Button btnXacnhan;
+        private Button btnHuy;
+        private ComboBox cbTenvtpt;
         private Panel panel1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpkNgaynhapvtpt;
         private TextBox txbDongianhap;
         private TextBox txbMavtpt;
     }

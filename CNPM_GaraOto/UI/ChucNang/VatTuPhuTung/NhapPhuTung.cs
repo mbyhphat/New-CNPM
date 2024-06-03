@@ -24,9 +24,9 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         void LoadVTPT()
         {
             List<VatTuPhuTung_DTO> vtpt = KhoPhuTungDAO.Instance.GetVatTuPhuTung();
-            comboBox1.DataSource = vtpt;
-            comboBox1.DisplayMember = "TenVatTuPhuTung";
-            txbMavtpt.Text = (comboBox1.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung.ToString();
+            cbTenvtpt.DataSource = vtpt;
+            cbTenvtpt.DisplayMember = "TenVatTuPhuTung";
+            txbMavtpt.Text = (cbTenvtpt.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,9 +39,9 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
                 }
                 else
                 {
-                    DateTime ngaynhap = dateTimePicker1.Value;
+                    DateTime ngaynhap = dtpkNgaynhapvtpt.Value;
                     int maphieunhap = KhoPhuTungDAO.Instance.GetMaNhapVTPT(ngaynhap);
-                    int mavtpt = (comboBox1.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung;
+                    int mavtpt = (cbTenvtpt.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung;
                     int soluong = int.Parse(txbSoluong.Text.ToString());
                     Decimal dongianhap = Decimal.Parse(txbDongianhap.Text.ToString());
                     Decimal thanhtien = soluong * dongianhap;
@@ -71,7 +71,7 @@ namespace CNPM_GaraOto.UI.ChucNang.VatTuPhuTung
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
 
-            txbMavtpt.Text = (comboBox1.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung.ToString();
+            txbMavtpt.Text = (cbTenvtpt.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung.ToString();
         }
     }
 }
