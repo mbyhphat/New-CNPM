@@ -35,14 +35,14 @@ namespace CNPM_GaraOto.UI.ChucNang.TiepNhanXe
             foreach (DTO.HieuXe_DTO item in list)
             {
                 string HieuXe = item.TenHieuXe.ToString();
-                comboBox_HieuXe.Items.Add(HieuXe); 
+                cbHieuXe.Items.Add(HieuXe); 
             }
         }
  
 
         private void TiepNhanXe_Load(object sender, EventArgs e)
         {
-            text_NgayTiepNhan.Text = DateTime.Now.ToString("yyyy/MM/dd");
+            tbNgayTiepNhan.Text = DateTime.Now.ToString("yyyy/MM/dd");
         }
 
         private bool isValidPhoneNumber(string SoDienThoai)
@@ -66,13 +66,13 @@ namespace CNPM_GaraOto.UI.ChucNang.TiepNhanXe
         }
         private void button_XacNhan_Click(object sender, EventArgs e)
         {
-            string TenChuXe = text_TenChuXe.Text;
-            string BienSoXe = text_BienSoXe.Text;
-            string HieuXe = comboBox_HieuXe.Text;
-            string DiaChi = text_DiaChi.Text;
-            string SoDienThoai = text_SoDienThoai.Text;
-            string Email = text_Email.Text;
-            string NgayTiepNhan = text_NgayTiepNhan.Text;
+            string TenChuXe = tbTenChuXe.Text;
+            string BienSoXe = tbBienSoXe.Text;
+            string HieuXe = cbHieuXe.Text;
+            string DiaChi = tbDiaChi.Text;
+            string SoDienThoai = tbSoDienThoai.Text;
+            string Email = tbEmail.Text;
+            string NgayTiepNhan = tbNgayTiepNhan.Text;
             string NgayHomNay = DateTime.Today.ToString("yyyy/MM/dd");
             DateTime date_NgayHomNay = DateTime.ParseExact(NgayHomNay, "yyyy/MM/dd", CultureInfo.InvariantCulture);
 

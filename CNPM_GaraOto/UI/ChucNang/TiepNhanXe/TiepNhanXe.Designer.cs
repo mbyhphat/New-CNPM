@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            text_TenChuXe = new TextBox();
-            text_BienSoXe = new TextBox();
-            text_DiaChi = new TextBox();
-            text_NgayTiepNhan = new TextBox();
-            text_SoDienThoai = new TextBox();
-            label_TiepNhanXe = new Label();
-            label_TenChuXe = new Label();
-            label_BienSoXe = new Label();
-            label_HieuXe = new Label();
-            label_DiaChi = new Label();
-            label_SoDienThoai = new Label();
-            label_NgayTiepNhan = new Label();
+            tbTenChuXe = new TextBox();
+            tbBienSoXe = new TextBox();
+            tbDiaChi = new TextBox();
+            tbNgayTiepNhan = new TextBox();
+            tbSoDienThoai = new TextBox();
+            lbTiepNhanXe = new Label();
+            lbTenChuXe = new Label();
+            lbBienSoXe = new Label();
+            lbHieuXe = new Label();
+            lbDiaChi = new Label();
+            lbSoDienThoai = new Label();
+            lbNgayTiepNhan = new Label();
             button_XacNhan = new Button();
             button1 = new Button();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            label1 = new Label();
-            text_Email = new TextBox();
-            comboBox_HieuXe = new ComboBox();
+            lbEmail = new Label();
+            tbEmail = new TextBox();
+            cbHieuXe = new ComboBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -63,126 +63,126 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
-            // text_TenChuXe
+            // tbTenChuXe
             // 
-            text_TenChuXe.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            text_TenChuXe.ForeColor = Color.Black;
-            text_TenChuXe.Location = new Point(189, 68);
-            text_TenChuXe.Name = "text_TenChuXe";
-            text_TenChuXe.Size = new Size(400, 36);
-            text_TenChuXe.TabIndex = 0;
+            tbTenChuXe.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbTenChuXe.ForeColor = Color.Black;
+            tbTenChuXe.Location = new Point(189, 68);
+            tbTenChuXe.Name = "tbTenChuXe";
+            tbTenChuXe.Size = new Size(400, 30);
+            tbTenChuXe.TabIndex = 0;
             // 
-            // text_BienSoXe
+            // tbBienSoXe
             // 
-            text_BienSoXe.Font = new Font("Arial", 15F);
-            text_BienSoXe.ForeColor = Color.Black;
-            text_BienSoXe.Location = new Point(189, 131);
-            text_BienSoXe.Name = "text_BienSoXe";
-            text_BienSoXe.Size = new Size(400, 36);
-            text_BienSoXe.TabIndex = 1;
+            tbBienSoXe.Font = new Font("Arial", 15F);
+            tbBienSoXe.ForeColor = Color.Black;
+            tbBienSoXe.Location = new Point(189, 131);
+            tbBienSoXe.Name = "tbBienSoXe";
+            tbBienSoXe.Size = new Size(400, 30);
+            tbBienSoXe.TabIndex = 1;
             // 
-            // text_DiaChi
+            // tbDiaChi
             // 
-            text_DiaChi.Font = new Font("Arial", 15F);
-            text_DiaChi.ForeColor = Color.Black;
-            text_DiaChi.Location = new Point(189, 257);
-            text_DiaChi.Name = "text_DiaChi";
-            text_DiaChi.Size = new Size(400, 36);
-            text_DiaChi.TabIndex = 3;
+            tbDiaChi.Font = new Font("Arial", 15F);
+            tbDiaChi.ForeColor = Color.Black;
+            tbDiaChi.Location = new Point(189, 257);
+            tbDiaChi.Name = "tbDiaChi";
+            tbDiaChi.Size = new Size(400, 30);
+            tbDiaChi.TabIndex = 3;
             // 
-            // text_NgayTiepNhan
+            // tbNgayTiepNhan
             // 
-            text_NgayTiepNhan.Font = new Font("Arial", 15F);
-            text_NgayTiepNhan.ForeColor = Color.Black;
-            text_NgayTiepNhan.Location = new Point(189, 446);
-            text_NgayTiepNhan.Name = "text_NgayTiepNhan";
-            text_NgayTiepNhan.Size = new Size(400, 36);
-            text_NgayTiepNhan.TabIndex = 6;
+            tbNgayTiepNhan.Font = new Font("Arial", 15F);
+            tbNgayTiepNhan.ForeColor = Color.Black;
+            tbNgayTiepNhan.Location = new Point(189, 446);
+            tbNgayTiepNhan.Name = "tbNgayTiepNhan";
+            tbNgayTiepNhan.Size = new Size(400, 30);
+            tbNgayTiepNhan.TabIndex = 6;
             // 
-            // text_SoDienThoai
+            // tbSoDienThoai
             // 
-            text_SoDienThoai.Font = new Font("Arial", 15F);
-            text_SoDienThoai.ForeColor = Color.Black;
-            text_SoDienThoai.Location = new Point(189, 320);
-            text_SoDienThoai.Name = "text_SoDienThoai";
-            text_SoDienThoai.Size = new Size(400, 36);
-            text_SoDienThoai.TabIndex = 4;
+            tbSoDienThoai.Font = new Font("Arial", 15F);
+            tbSoDienThoai.ForeColor = Color.Black;
+            tbSoDienThoai.Location = new Point(189, 320);
+            tbSoDienThoai.Name = "tbSoDienThoai";
+            tbSoDienThoai.Size = new Size(400, 30);
+            tbSoDienThoai.TabIndex = 4;
             // 
-            // label_TiepNhanXe
+            // lbTiepNhanXe
             // 
-            label_TiepNhanXe.AutoSize = true;
-            label_TiepNhanXe.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_TiepNhanXe.Location = new Point(281, 9);
-            label_TiepNhanXe.Name = "label_TiepNhanXe";
-            label_TiepNhanXe.Size = new Size(254, 40);
-            label_TiepNhanXe.TabIndex = 8;
-            label_TiepNhanXe.Text = "TIẾP NHẬN XE";
+            lbTiepNhanXe.AutoSize = true;
+            lbTiepNhanXe.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTiepNhanXe.Location = new Point(281, 9);
+            lbTiepNhanXe.Name = "lbTiepNhanXe";
+            lbTiepNhanXe.Size = new Size(207, 32);
+            lbTiepNhanXe.TabIndex = 8;
+            lbTiepNhanXe.Text = "TIẾP NHẬN XE";
             // 
-            // label_TenChuXe
+            // lbTenChuXe
             // 
-            label_TenChuXe.AutoSize = true;
-            label_TenChuXe.Font = new Font("Arial", 10F);
-            label_TenChuXe.ForeColor = Color.FromArgb(130, 130, 130);
-            label_TenChuXe.Location = new Point(189, 49);
-            label_TenChuXe.Name = "label_TenChuXe";
-            label_TenChuXe.Size = new Size(89, 19);
-            label_TenChuXe.TabIndex = 9;
-            label_TenChuXe.Text = "Tên chủ xe";
+            lbTenChuXe.AutoSize = true;
+            lbTenChuXe.Font = new Font("Arial", 10F);
+            lbTenChuXe.ForeColor = Color.FromArgb(130, 130, 130);
+            lbTenChuXe.Location = new Point(189, 49);
+            lbTenChuXe.Name = "lbTenChuXe";
+            lbTenChuXe.Size = new Size(77, 16);
+            lbTenChuXe.TabIndex = 9;
+            lbTenChuXe.Text = "Tên chủ xe";
             // 
-            // label_BienSoXe
+            // lbBienSoXe
             // 
-            label_BienSoXe.AutoSize = true;
-            label_BienSoXe.Font = new Font("Arial", 10F);
-            label_BienSoXe.ForeColor = Color.FromArgb(130, 130, 130);
-            label_BienSoXe.Location = new Point(189, 112);
-            label_BienSoXe.Name = "label_BienSoXe";
-            label_BienSoXe.Size = new Size(85, 19);
-            label_BienSoXe.TabIndex = 10;
-            label_BienSoXe.Text = "Biển số xe";
+            lbBienSoXe.AutoSize = true;
+            lbBienSoXe.Font = new Font("Arial", 10F);
+            lbBienSoXe.ForeColor = Color.FromArgb(130, 130, 130);
+            lbBienSoXe.Location = new Point(189, 112);
+            lbBienSoXe.Name = "lbBienSoXe";
+            lbBienSoXe.Size = new Size(72, 16);
+            lbBienSoXe.TabIndex = 10;
+            lbBienSoXe.Text = "Biển số xe";
             // 
-            // label_HieuXe
+            // lbHieuXe
             // 
-            label_HieuXe.AutoSize = true;
-            label_HieuXe.Font = new Font("Arial", 10F);
-            label_HieuXe.ForeColor = Color.FromArgb(130, 130, 130);
-            label_HieuXe.Location = new Point(189, 175);
-            label_HieuXe.Name = "label_HieuXe";
-            label_HieuXe.Size = new Size(63, 19);
-            label_HieuXe.TabIndex = 11;
-            label_HieuXe.Text = "Hiệu xe";
+            lbHieuXe.AutoSize = true;
+            lbHieuXe.Font = new Font("Arial", 10F);
+            lbHieuXe.ForeColor = Color.FromArgb(130, 130, 130);
+            lbHieuXe.Location = new Point(189, 175);
+            lbHieuXe.Name = "lbHieuXe";
+            lbHieuXe.Size = new Size(53, 16);
+            lbHieuXe.TabIndex = 11;
+            lbHieuXe.Text = "Hiệu xe";
             // 
-            // label_DiaChi
+            // lbDiaChi
             // 
-            label_DiaChi.AutoSize = true;
-            label_DiaChi.Font = new Font("Arial", 10F);
-            label_DiaChi.ForeColor = Color.FromArgb(130, 130, 130);
-            label_DiaChi.Location = new Point(189, 238);
-            label_DiaChi.Name = "label_DiaChi";
-            label_DiaChi.Size = new Size(61, 19);
-            label_DiaChi.TabIndex = 12;
-            label_DiaChi.Text = "Địa chỉ";
+            lbDiaChi.AutoSize = true;
+            lbDiaChi.Font = new Font("Arial", 10F);
+            lbDiaChi.ForeColor = Color.FromArgb(130, 130, 130);
+            lbDiaChi.Location = new Point(189, 238);
+            lbDiaChi.Name = "lbDiaChi";
+            lbDiaChi.Size = new Size(50, 16);
+            lbDiaChi.TabIndex = 12;
+            lbDiaChi.Text = "Địa chỉ";
             // 
-            // label_SoDienThoai
+            // lbSoDienThoai
             // 
-            label_SoDienThoai.AutoSize = true;
-            label_SoDienThoai.Font = new Font("Arial", 10F);
-            label_SoDienThoai.ForeColor = Color.FromArgb(130, 130, 130);
-            label_SoDienThoai.Location = new Point(189, 301);
-            label_SoDienThoai.Name = "label_SoDienThoai";
-            label_SoDienThoai.Size = new Size(106, 19);
-            label_SoDienThoai.TabIndex = 13;
-            label_SoDienThoai.Text = "Số điện thoại";
+            lbSoDienThoai.AutoSize = true;
+            lbSoDienThoai.Font = new Font("Arial", 10F);
+            lbSoDienThoai.ForeColor = Color.FromArgb(130, 130, 130);
+            lbSoDienThoai.Location = new Point(189, 301);
+            lbSoDienThoai.Name = "lbSoDienThoai";
+            lbSoDienThoai.Size = new Size(90, 16);
+            lbSoDienThoai.TabIndex = 13;
+            lbSoDienThoai.Text = "Số điện thoại";
             // 
-            // label_NgayTiepNhan
+            // lbNgayTiepNhan
             // 
-            label_NgayTiepNhan.AutoSize = true;
-            label_NgayTiepNhan.Font = new Font("Arial", 10F);
-            label_NgayTiepNhan.ForeColor = Color.FromArgb(130, 130, 130);
-            label_NgayTiepNhan.Location = new Point(189, 427);
-            label_NgayTiepNhan.Name = "label_NgayTiepNhan";
-            label_NgayTiepNhan.Size = new Size(267, 19);
-            label_NgayTiepNhan.TabIndex = 14;
-            label_NgayTiepNhan.Text = "Ngày tiếp nhận (Ví dụ: 2024/12/04)";
+            lbNgayTiepNhan.AutoSize = true;
+            lbNgayTiepNhan.Font = new Font("Arial", 10F);
+            lbNgayTiepNhan.ForeColor = Color.FromArgb(130, 130, 130);
+            lbNgayTiepNhan.Location = new Point(189, 427);
+            lbNgayTiepNhan.Name = "lbNgayTiepNhan";
+            lbNgayTiepNhan.Size = new Size(229, 16);
+            lbNgayTiepNhan.TabIndex = 14;
+            lbNgayTiepNhan.Text = "Ngày tiếp nhận (Ví dụ: 2024/12/04)";
             // 
             // button_XacNhan
             // 
@@ -216,34 +216,34 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // label1
+            // lbEmail
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 10F);
-            label1.ForeColor = Color.FromArgb(130, 130, 130);
-            label1.Location = new Point(189, 364);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 19);
-            label1.TabIndex = 18;
-            label1.Text = "Email";
+            lbEmail.AutoSize = true;
+            lbEmail.Font = new Font("Arial", 10F);
+            lbEmail.ForeColor = Color.FromArgb(130, 130, 130);
+            lbEmail.Location = new Point(189, 364);
+            lbEmail.Name = "lbEmail";
+            lbEmail.Size = new Size(41, 16);
+            lbEmail.TabIndex = 18;
+            lbEmail.Text = "Email";
             // 
-            // text_Email
+            // tbEmail
             // 
-            text_Email.Font = new Font("Arial", 15F);
-            text_Email.ForeColor = Color.Black;
-            text_Email.Location = new Point(189, 383);
-            text_Email.Name = "text_Email";
-            text_Email.Size = new Size(400, 36);
-            text_Email.TabIndex = 5;
+            tbEmail.Font = new Font("Arial", 15F);
+            tbEmail.ForeColor = Color.Black;
+            tbEmail.Location = new Point(189, 383);
+            tbEmail.Name = "tbEmail";
+            tbEmail.Size = new Size(400, 30);
+            tbEmail.TabIndex = 5;
             // 
-            // comboBox_HieuXe
+            // cbHieuXe
             // 
-            comboBox_HieuXe.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox_HieuXe.FormattingEnabled = true;
-            comboBox_HieuXe.Location = new Point(189, 194);
-            comboBox_HieuXe.Name = "comboBox_HieuXe";
-            comboBox_HieuXe.Size = new Size(400, 36);
-            comboBox_HieuXe.TabIndex = 2;
+            cbHieuXe.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbHieuXe.FormattingEnabled = true;
+            cbHieuXe.Location = new Point(189, 194);
+            cbHieuXe.Name = "cbHieuXe";
+            cbHieuXe.Size = new Size(400, 31);
+            cbHieuXe.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -327,23 +327,23 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(comboBox_HieuXe);
-            Controls.Add(label1);
-            Controls.Add(text_Email);
+            Controls.Add(cbHieuXe);
+            Controls.Add(lbEmail);
+            Controls.Add(tbEmail);
             Controls.Add(button1);
             Controls.Add(button_XacNhan);
-            Controls.Add(label_NgayTiepNhan);
-            Controls.Add(label_SoDienThoai);
-            Controls.Add(label_DiaChi);
-            Controls.Add(label_HieuXe);
-            Controls.Add(label_BienSoXe);
-            Controls.Add(label_TenChuXe);
-            Controls.Add(label_TiepNhanXe);
-            Controls.Add(text_NgayTiepNhan);
-            Controls.Add(text_SoDienThoai);
-            Controls.Add(text_DiaChi);
-            Controls.Add(text_BienSoXe);
-            Controls.Add(text_TenChuXe);
+            Controls.Add(lbNgayTiepNhan);
+            Controls.Add(lbSoDienThoai);
+            Controls.Add(lbDiaChi);
+            Controls.Add(lbHieuXe);
+            Controls.Add(lbBienSoXe);
+            Controls.Add(lbTenChuXe);
+            Controls.Add(lbTiepNhanXe);
+            Controls.Add(tbNgayTiepNhan);
+            Controls.Add(tbSoDienThoai);
+            Controls.Add(tbDiaChi);
+            Controls.Add(tbBienSoXe);
+            Controls.Add(tbTenChuXe);
             Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "TiepNhanXe";
             StartPosition = FormStartPosition.CenterScreen;
@@ -362,24 +362,24 @@
 
         #endregion
 
-        private TextBox text_TenChuXe;
-        private TextBox text_BienSoXe;
-        private TextBox text_DiaChi;
-        private TextBox text_NgayTiepNhan;
-        private TextBox text_SoDienThoai;
-        private Label label_TiepNhanXe;
-        private Label label_TenChuXe;
-        private Label label_BienSoXe;
-        private Label label_HieuXe;
-        private Label label_DiaChi;
-        private Label label_SoDienThoai;
-        private Label label_NgayTiepNhan;
+        private TextBox tbTenChuXe;
+        private TextBox tbBienSoXe;
+        private TextBox tbDiaChi;
+        private TextBox tbNgayTiepNhan;
+        private TextBox tbSoDienThoai;
+        private Label lbTiepNhanXe;
+        private Label lbTenChuXe;
+        private Label lbBienSoXe;
+        private Label lbHieuXe;
+        private Label lbDiaChi;
+        private Label lbSoDienThoai;
+        private Label lbNgayTiepNhan;
         private Button button_XacNhan;
         private Button button1;
         private ContextMenuStrip contextMenuStrip1;
-        private Label label1;
-        private TextBox text_Email;
-        private ComboBox comboBox_HieuXe;
+        private Label lbEmail;
+        private TextBox tbEmail;
+        private ComboBox cbHieuXe;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
