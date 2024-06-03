@@ -29,7 +29,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapPhieuSuaChua
 
         private void LapPhieuSuaChua_Load(object sender, EventArgs e)
         {
-            textBox_NgaySuaChua.Text = DateTime.Now.ToString("yyyy/MM/dd");
+            tbNgaySuaChua.Text = DateTime.Now.ToString("yyyy/MM/dd");
         }
 
         private bool check_dinhdang_NgaySuaChua(string giatri)
@@ -43,8 +43,8 @@ namespace CNPM_GaraOto.UI.ChucNang.LapPhieuSuaChua
         
         private void button_XacNhan_Click(object sender, EventArgs e)
         {
-            string BienSoXe = textBox_BienSoXe.Text;
-            string NgaySuaChua = textBox_NgaySuaChua.Text;
+            string BienSoXe = tbBienSoXe.Text;
+            string NgaySuaChua = tbNgaySuaChua.Text;
             string NgayHomNay = DateTime.Today.ToString("yyyy/MM/dd");
             DateTime date_NgayHomNay = DateTime.ParseExact(NgayHomNay, "yyyy/MM/dd", CultureInfo.InvariantCulture);
 

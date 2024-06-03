@@ -30,93 +30,87 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LapPhieuSuaChua));
-            label_LapPhieuSuaChua = new Label();
-            label_BienSoXe = new Label();
-            label_NgaySuaChua = new Label();
-            button_XacNhan = new Button();
-            button1 = new Button();
+            lbLapPhieuSuaChua = new Label();
+            lbBienSoXe = new Label();
+            lbNgaySuaChua = new Label();
+            btnXacNhan = new Button();
+            btnDong = new Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             imageList1 = new ImageList(components);
             pictureBox2 = new PictureBox();
-            textBox_BienSoXe = new TextBox();
-            textBox_NgaySuaChua = new TextBox();
+            tbBienSoXe = new TextBox();
+            tbNgaySuaChua = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // label_LapPhieuSuaChua
+            // lbLapPhieuSuaChua
             // 
-            label_LapPhieuSuaChua.AutoSize = true;
-            label_LapPhieuSuaChua.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_LapPhieuSuaChua.Location = new Point(806, 28);
-            label_LapPhieuSuaChua.Margin = new Padding(8, 0, 8, 0);
-            label_LapPhieuSuaChua.Name = "label_LapPhieuSuaChua";
-            label_LapPhieuSuaChua.Size = new Size(777, 79);
-            label_LapPhieuSuaChua.TabIndex = 0;
-            label_LapPhieuSuaChua.Text = "LẬP PHIẾU SỬA CHỮA";
+            lbLapPhieuSuaChua.AutoSize = true;
+            lbLapPhieuSuaChua.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLapPhieuSuaChua.Location = new Point(297, 9);
+            lbLapPhieuSuaChua.Name = "lbLapPhieuSuaChua";
+            lbLapPhieuSuaChua.Size = new Size(315, 32);
+            lbLapPhieuSuaChua.TabIndex = 0;
+            lbLapPhieuSuaChua.Text = "LẬP PHIẾU SỬA CHỮA";
             // 
-            // label_BienSoXe
+            // lbBienSoXe
             // 
-            label_BienSoXe.AutoSize = true;
-            label_BienSoXe.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label_BienSoXe.ForeColor = Color.FromArgb(130, 130, 130);
-            label_BienSoXe.Location = new Point(850, 197);
-            label_BienSoXe.Margin = new Padding(8, 0, 8, 0);
-            label_BienSoXe.Name = "label_BienSoXe";
-            label_BienSoXe.Size = new Size(194, 43);
-            label_BienSoXe.TabIndex = 1;
-            label_BienSoXe.Text = "Biển số xe";
+            lbBienSoXe.AutoSize = true;
+            lbBienSoXe.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbBienSoXe.ForeColor = Color.FromArgb(130, 130, 130);
+            lbBienSoXe.Location = new Point(313, 63);
+            lbBienSoXe.Name = "lbBienSoXe";
+            lbBienSoXe.Size = new Size(76, 17);
+            lbBienSoXe.TabIndex = 1;
+            lbBienSoXe.Text = "Biển số xe";
             // 
-            // label_NgaySuaChua
+            // lbNgaySuaChua
             // 
-            label_NgaySuaChua.AutoSize = true;
-            label_NgaySuaChua.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label_NgaySuaChua.ForeColor = Color.FromArgb(130, 130, 130);
-            label_NgaySuaChua.Location = new Point(850, 508);
-            label_NgaySuaChua.Margin = new Padding(8, 0, 8, 0);
-            label_NgaySuaChua.Name = "label_NgaySuaChua";
-            label_NgaySuaChua.Size = new Size(618, 43);
-            label_NgaySuaChua.TabIndex = 2;
-            label_NgaySuaChua.Text = "Ngày sửa chữa (Ví dụ: 2024/12/04)";
+            lbNgaySuaChua.AutoSize = true;
+            lbNgaySuaChua.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbNgaySuaChua.ForeColor = Color.FromArgb(130, 130, 130);
+            lbNgaySuaChua.Location = new Point(313, 162);
+            lbNgaySuaChua.Name = "lbNgaySuaChua";
+            lbNgaySuaChua.Size = new Size(235, 17);
+            lbNgaySuaChua.TabIndex = 2;
+            lbNgaySuaChua.Text = "Ngày sửa chữa (Ví dụ: 2024/12/04)";
             // 
-            // button_XacNhan
+            // btnXacNhan
             // 
-            button_XacNhan.BackColor = Color.FromArgb(66, 133, 244);
-            button_XacNhan.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_XacNhan.ForeColor = Color.White;
-            button_XacNhan.Location = new Point(532, 808);
-            button_XacNhan.Margin = new Padding(8, 9, 8, 9);
-            button_XacNhan.Name = "button_XacNhan";
-            button_XacNhan.Size = new Size(407, 188);
-            button_XacNhan.TabIndex = 3;
-            button_XacNhan.Text = "XÁC NHẬN";
-            button_XacNhan.UseVisualStyleBackColor = false;
-            button_XacNhan.Click += button_XacNhan_Click;
+            btnXacNhan.BackColor = Color.FromArgb(66, 133, 244);
+            btnXacNhan.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnXacNhan.ForeColor = Color.White;
+            btnXacNhan.Location = new Point(196, 258);
+            btnXacNhan.Name = "btnXacNhan";
+            btnXacNhan.Size = new Size(150, 60);
+            btnXacNhan.TabIndex = 3;
+            btnXacNhan.Text = "XÁC NHẬN";
+            btnXacNhan.UseVisualStyleBackColor = false;
+            btnXacNhan.Click += button_XacNhan_Click;
             // 
-            // button1
+            // btnDong
             // 
-            button1.BackColor = Color.Black;
-            button1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1466, 808);
-            button1.Margin = new Padding(8, 9, 8, 9);
-            button1.Name = "button1";
-            button1.Size = new Size(407, 188);
-            button1.TabIndex = 4;
-            button1.Text = "ĐÓNG";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnDong.BackColor = Color.Black;
+            btnDong.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDong.ForeColor = Color.White;
+            btnDong.Location = new Point(540, 258);
+            btnDong.Name = "btnDong";
+            btnDong.Size = new Size(150, 60);
+            btnDong.TabIndex = 4;
+            btnDong.Text = "ĐÓNG";
+            btnDong.UseVisualStyleBackColor = false;
+            btnDong.Click += button1_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(619, 188);
-            pictureBox1.Margin = new Padding(8, 9, 8, 9);
+            pictureBox1.Location = new Point(228, 60);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(163, 188);
+            pictureBox1.Size = new Size(60, 60);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -124,19 +118,17 @@
             // label1
             // 
             label1.BackColor = Color.Black;
-            label1.Location = new Point(850, 370);
-            label1.Margin = new Padding(8, 0, 8, 0);
+            label1.Location = new Point(313, 118);
             label1.Name = "label1";
-            label1.Size = new Size(831, 6);
+            label1.Size = new Size(306, 2);
             label1.TabIndex = 6;
             // 
             // label2
             // 
             label2.BackColor = Color.Black;
-            label2.Location = new Point(850, 689);
-            label2.Margin = new Padding(8, 0, 8, 0);
+            label2.Location = new Point(313, 220);
             label2.Name = "label2";
-            label2.Size = new Size(831, 6);
+            label2.Size = new Size(306, 2);
             label2.TabIndex = 7;
             // 
             // imageList1
@@ -148,35 +140,32 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(619, 508);
-            pictureBox2.Margin = new Padding(8, 9, 8, 9);
+            pictureBox2.Location = new Point(228, 162);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(163, 188);
+            pictureBox2.Size = new Size(60, 60);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
             // 
-            // textBox_BienSoXe
+            // tbBienSoXe
             // 
-            textBox_BienSoXe.BackColor = SystemColors.Control;
-            textBox_BienSoXe.BorderStyle = BorderStyle.None;
-            textBox_BienSoXe.Font = new Font("Arial", 12F);
-            textBox_BienSoXe.Location = new Point(850, 310);
-            textBox_BienSoXe.Margin = new Padding(8, 9, 8, 9);
-            textBox_BienSoXe.Name = "textBox_BienSoXe";
-            textBox_BienSoXe.Size = new Size(831, 46);
-            textBox_BienSoXe.TabIndex = 0;
+            tbBienSoXe.BackColor = SystemColors.Control;
+            tbBienSoXe.BorderStyle = BorderStyle.None;
+            tbBienSoXe.Font = new Font("Arial", 12F);
+            tbBienSoXe.Location = new Point(313, 99);
+            tbBienSoXe.Name = "tbBienSoXe";
+            tbBienSoXe.Size = new Size(306, 19);
+            tbBienSoXe.TabIndex = 0;
             // 
-            // textBox_NgaySuaChua
+            // tbNgaySuaChua
             // 
-            textBox_NgaySuaChua.BackColor = SystemColors.Control;
-            textBox_NgaySuaChua.BorderStyle = BorderStyle.None;
-            textBox_NgaySuaChua.Font = new Font("Arial", 12F);
-            textBox_NgaySuaChua.Location = new Point(850, 630);
-            textBox_NgaySuaChua.Margin = new Padding(8, 9, 8, 9);
-            textBox_NgaySuaChua.Name = "textBox_NgaySuaChua";
-            textBox_NgaySuaChua.Size = new Size(831, 46);
-            textBox_NgaySuaChua.TabIndex = 1;
+            tbNgaySuaChua.BackColor = SystemColors.Control;
+            tbNgaySuaChua.BorderStyle = BorderStyle.None;
+            tbNgaySuaChua.Font = new Font("Arial", 12F);
+            tbNgaySuaChua.Location = new Point(313, 201);
+            tbNgaySuaChua.Name = "tbNgaySuaChua";
+            tbNgaySuaChua.Size = new Size(306, 19);
+            tbNgaySuaChua.TabIndex = 1;
             // 
             // contextMenuStrip1
             // 
@@ -186,21 +175,20 @@
             // 
             // LapPhieuSuaChua
             // 
-            AutoScaleDimensions = new SizeF(19F, 47F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2364, 1075);
-            Controls.Add(textBox_NgaySuaChua);
-            Controls.Add(textBox_BienSoXe);
+            ClientSize = new Size(871, 339);
+            Controls.Add(tbNgaySuaChua);
+            Controls.Add(tbBienSoXe);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(button_XacNhan);
-            Controls.Add(label_NgaySuaChua);
-            Controls.Add(label_BienSoXe);
-            Controls.Add(label_LapPhieuSuaChua);
-            Margin = new Padding(8, 9, 8, 9);
+            Controls.Add(btnDong);
+            Controls.Add(btnXacNhan);
+            Controls.Add(lbNgaySuaChua);
+            Controls.Add(lbBienSoXe);
+            Controls.Add(lbLapPhieuSuaChua);
             Name = "LapPhieuSuaChua";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LapPhieuSuaChua";
@@ -213,18 +201,18 @@
 
         #endregion
 
-        private Label label_LapPhieuSuaChua;
-        private Label label_BienSoXe;
-        private Label label_NgaySuaChua;
-        private Button button_XacNhan;
-        private Button button1;
+        private Label lbLapPhieuSuaChua;
+        private Label lbBienSoXe;
+        private Label lbNgaySuaChua;
+        private Button btnXacNhan;
+        private Button btnDong;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
         private ImageList imageList1;
         private PictureBox pictureBox2;
-        private TextBox textBox_BienSoXe;
-        private TextBox textBox_NgaySuaChua;
+        private TextBox tbBienSoXe;
+        private TextBox tbNgaySuaChua;
         private ContextMenuStrip contextMenuStrip1;
     }
 }
