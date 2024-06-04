@@ -31,16 +31,16 @@
             textBox1 = new TextBox();
             label1 = new Label();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgvBaocaotonkho = new DataGridView();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
+            btnInbaocao = new Button();
+            btnQuaylai = new Button();
             panel3 = new Panel();
             lbYear = new Label();
             label5 = new Label();
             lbMonth = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaotonkho).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
@@ -70,59 +70,59 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgvBaocaotonkho);
             panel1.Location = new Point(-1, 89);
             panel1.Name = "panel1";
             panel1.Size = new Size(801, 368);
             panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // dtgvBaocaotonkho
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(795, 368);
-            dataGridView1.TabIndex = 0;
+            dtgvBaocaotonkho.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvBaocaotonkho.BackgroundColor = SystemColors.Control;
+            dtgvBaocaotonkho.BorderStyle = BorderStyle.None;
+            dtgvBaocaotonkho.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvBaocaotonkho.Location = new Point(3, 0);
+            dtgvBaocaotonkho.Name = "dtgvBaocaotonkho";
+            dtgvBaocaotonkho.ReadOnly = true;
+            dtgvBaocaotonkho.RowHeadersWidth = 51;
+            dtgvBaocaotonkho.Size = new Size(795, 368);
+            dtgvBaocaotonkho.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button2);
+            flowLayoutPanel1.Controls.Add(btnInbaocao);
+            flowLayoutPanel1.Controls.Add(btnQuaylai);
             flowLayoutPanel1.Location = new Point(478, 463);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(322, 53);
             flowLayoutPanel1.TabIndex = 4;
             // 
-            // button1
+            // btnInbaocao
             // 
-            button1.BackColor = SystemColors.HotTrack;
-            button1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(157, 42);
-            button1.TabIndex = 0;
-            button1.Text = "In Báo Cáo";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnInbaocao.BackColor = SystemColors.HotTrack;
+            btnInbaocao.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnInbaocao.ForeColor = Color.White;
+            btnInbaocao.Location = new Point(3, 3);
+            btnInbaocao.Name = "btnInbaocao";
+            btnInbaocao.Size = new Size(157, 42);
+            btnInbaocao.TabIndex = 0;
+            btnInbaocao.Text = "In Báo Cáo";
+            btnInbaocao.UseVisualStyleBackColor = false;
+            btnInbaocao.Click += button1_Click;
             // 
-            // button2
+            // btnQuaylai
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(166, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(108, 42);
-            button2.TabIndex = 1;
-            button2.Text = "Quay lại";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnQuaylai.BackColor = SystemColors.ActiveCaptionText;
+            btnQuaylai.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuaylai.ForeColor = Color.White;
+            btnQuaylai.Location = new Point(166, 3);
+            btnQuaylai.Name = "btnQuaylai";
+            btnQuaylai.Size = new Size(108, 42);
+            btnQuaylai.TabIndex = 1;
+            btnQuaylai.Text = "Quay lại";
+            btnQuaylai.UseVisualStyleBackColor = false;
+            btnQuaylai.Click += button2_Click;
             // 
             // panel3
             // 
@@ -175,9 +175,9 @@
             Controls.Add(textBox1);
             Name = "BaoCaoTonKho";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Báo Cáo Doanh Thu";
+            Text = "Báo Cáo Tồn Kho";
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaotonkho).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -190,10 +190,10 @@
         private TextBox textBox1;
         private Label label1;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvBaocaotonkho;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Button button1;
-        private Button button2;
+        private Button btnInbaocao;
+        private Button btnQuaylai;
         private Panel panel3;
         private Label lbYear;
         private Label label5;

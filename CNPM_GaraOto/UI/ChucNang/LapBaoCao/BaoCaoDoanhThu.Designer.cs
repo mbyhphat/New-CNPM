@@ -31,7 +31,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             textBox1 = new TextBox();
             label1 = new Label();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgvBaocaodoanhthu = new DataGridView();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnInbaocao = new Button();
@@ -43,7 +43,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             label5 = new Label();
             lbMonth = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaodoanhthu).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -74,24 +74,24 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             // 
             // panel1
             // 
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgvBaocaodoanhthu);
             panel1.Location = new Point(-1, 89);
             panel1.Name = "panel1";
             panel1.Size = new Size(801, 368);
             panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // dtgvBaocaodoanhthu
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(798, 362);
-            dataGridView1.TabIndex = 0;
+            dtgvBaocaodoanhthu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvBaocaodoanhthu.BackgroundColor = SystemColors.Control;
+            dtgvBaocaodoanhthu.BorderStyle = BorderStyle.None;
+            dtgvBaocaodoanhthu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvBaocaodoanhthu.Location = new Point(0, 3);
+            dtgvBaocaodoanhthu.Name = "dtgvBaocaodoanhthu";
+            dtgvBaocaodoanhthu.ReadOnly = true;
+            dtgvBaocaodoanhthu.RowHeadersWidth = 51;
+            dtgvBaocaodoanhthu.Size = new Size(798, 362);
+            dtgvBaocaodoanhthu.TabIndex = 0;
             // 
             // label2
             // 
@@ -210,7 +210,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Báo Cáo Doanh Thu";
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaodoanhthu).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -225,7 +225,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         private TextBox textBox1;
         private Label label1;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvBaocaodoanhthu;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button btnInbaocao;

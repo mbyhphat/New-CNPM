@@ -27,13 +27,13 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         }
         void LoadPhieuNhap(DateTime start, DateTime end)
         {
-            dataGridView1.DataSource = PhieuNhapVTPTDAO.Instance.GetPhieuNhap(start, end);
+            dtgvBaocaonhapvtpt.DataSource = PhieuNhapVTPTDAO.Instance.GetPhieuNhap(start, end);
         }
         void GetTongDoanhThu(DateTime start, DateTime end)
         {
             float DoanhThu = PhieuNhapVTPTDAO.Instance.GetDoanhThu(start, end);
             CultureInfo culture = new CultureInfo("vi-VN");
-            lbDoanhthu.Text = DoanhThu.ToString("c", culture);
+            lbTongtiennhap.Text = DoanhThu.ToString("c", culture);
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -28,7 +28,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         {
             int month = Convert.ToInt32(lbMonth.Text);
             int year = Convert.ToInt32(lbYear.Text);
-            dataGridView1.DataSource = BaoCaoTonKhoDAO.Instance.LapBaoCaoTonKho(month, year);
+            dtgvBaocaotonkho.DataSource = BaoCaoTonKhoDAO.Instance.LapBaoCaoTonKho(month, year);
         }
 
         private void button2_Click(object sender, EventArgs e)

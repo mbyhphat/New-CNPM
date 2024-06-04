@@ -20,51 +20,74 @@ namespace CNPM_GaraOto.UI.ChucNang.TraCuuXe
         {
             InitializeComponent();
             this.biensoxe = biensoxe;
-            dateTimePicker1.Value = LapPhieuSuaChuaDAO.Instance.GetNgaySuaChua(biensoxe);
+            dtpNgaysuachua.Value = LapPhieuSuaChuaDAO.Instance.GetNgaySuaChua(biensoxe);
             LoadTienCong();
             LoadVatTuPhuTung();
         }
         private void LoadTienCong()
         {
             List<TienCong_DTO> tcDTO = TienCongDAO.Instance.GetTienCong();
-            comboBox1.DataSource = tcDTO;
-            comboBox1.DisplayMember = "NoiDung";
+            cbNoidung.DataSource = tcDTO;
+            cbNoidung.DisplayMember = "NoiDung";
         } 
         private void LoadVatTuPhuTung()
         {
             List<VatTuPhuTung_DTO> vtpt = KhoPhuTungDAO.Instance.GetVatTuPhuTung();
-            comboBox2.DataSource = vtpt;
-            comboBox2.DisplayMember = "TenVatTuPhuTung";
+            cbVattuphutung.DataSource = vtpt;
+            cbVattuphutung.DisplayMember = "TenVatTuPhuTung";
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult messageBox = MessageBox.Show("Bạn có muốn thêm vào các nội dung này?",
-                "Thêm nội dung chi tiết sửa chữa", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            DialogResult messageBox;
+
+            if (!string.IsNullOrEmpty(txbSoluong.Text))
+            {
+                messageBox = MessageBox.Show("Bạn có muốn thêm vào các nội dung này?",
+                    "Thêm nội dung chi tiết sửa chữa", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập số lượng trước.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txbSoluong.Focus();
+                return; // Kết thúc phương thức nếu không nhập số lượng
+            }
+
             if (messageBox == DialogResult.Yes)
             {
-                DateTime ngaysuachua = dateTimePicker1.Value;
-                int matiencong = (comboBox1.SelectedItem as TienCong_DTO).MaTienCong;
-                int mavtpt = (comboBox2.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung;
-                int soluong = Convert.ToInt32(textBox4.Text.ToString());
-                int maphieusuachua = ThemChiTietPhieuSuaChuaDAO.Instance.getMaPhieuSuaChuaTuNgayVaBienSo(biensoxe, ngaysuachua);  
-                if(maphieusuachua==-1)
+                DateTime ngaysuachua = dtpNgaysuachua.Value;
+                int matiencong = (cbNoidung.SelectedItem as TienCong_DTO).MaTienCong;
+                int mavtpt = (cbVattuphutung.SelectedItem as VatTuPhuTung_DTO).MaVatTuPhuTung;
+                int soluong;
+
+                try
+                {
+                    soluong = Convert.ToInt32(txbSoluong.Text.ToString());
+                }
+                catch
+                {
+                    MessageBox.Show("Số lượng không hợp lệ. Vui lòng nhập lại số nguyên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txbSoluong.Focus();
+                    return; // Kết thúc phương thức nếu số lượng không hợp lệ
+                }
+
+                int maphieusuachua = ThemChiTietPhieuSuaChuaDAO.Instance.getMaPhieuSuaChuaTuNgayVaBienSo(biensoxe, ngaysuachua);
+                if (maphieusuachua == -1)
                 {
                     MessageBox.Show("Dữ liệu nhập sai, vui lòng nhập lại!");
                     return;
                 }
+
                 if (!ThemChiTietPhieuSuaChuaDAO.Instance.checkConDuVatTuPhuTung(mavtpt, soluong))
                 {
                     MessageBox.Show("Không còn đủ vật tư phụ tùng");
                     return;
                 }
+
                 ThemChiTietPhieuSuaChuaDAO.Instance.ThemChiTiet(maphieusuachua, matiencong, mavtpt, soluong);
-                ThemChiTietPhieuSuaChuaDAO.Instance.UpdateTonKho(mavtpt, soluong, dateTimePicker1.Value.Month, dateTimePicker1.Value.Year);
+                ThemChiTietPhieuSuaChuaDAO.Instance.UpdateTonKho(mavtpt, soluong, dtpNgaysuachua.Value.Month, dtpNgaysuachua.Value.Year);
                 DataAdded?.Invoke(this, EventArgs.Empty);
                 this.Close();
-            }
-            else
-            {
-                return;
             }
         }
 

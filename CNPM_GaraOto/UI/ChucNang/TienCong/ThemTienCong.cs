@@ -21,7 +21,7 @@ namespace CNPM_GaraOto.UI.ChucNang.TienCong
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            if(string.IsNullOrEmpty(txbNoidungsuachua.Text) || string.IsNullOrEmpty(txbGiatiencong.Text))
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -30,8 +30,8 @@ namespace CNPM_GaraOto.UI.ChucNang.TienCong
                 DialogResult messageBox = MessageBox.Show("Thêm tiền công", "Bạn có muốn thêm tiền công này?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (messageBox == DialogResult.Yes)
                 {
-                    string nd = textBox1.Text.ToString();
-                    Decimal t = Decimal.Parse(textBox2.Text.ToString());
+                    string nd = txbNoidungsuachua.Text.ToString();
+                    Decimal t = Decimal.Parse(txbGiatiencong.Text.ToString());
                     ThemTienCongDAO.Instance.ThemTienCong(nd, t);
                     DataAdded?.Invoke(this, EventArgs.Empty);
                     this.Close();

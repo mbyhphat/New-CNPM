@@ -33,8 +33,8 @@
             cbMonth = new ComboBox();
             cbYear = new ComboBox();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
+            btnXembaocao = new Button();
+            btnQuaylai = new Button();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -84,36 +84,36 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(button1);
-            flowLayoutPanel2.Controls.Add(button2);
+            flowLayoutPanel2.Controls.Add(btnXembaocao);
+            flowLayoutPanel2.Controls.Add(btnQuaylai);
             flowLayoutPanel2.Location = new Point(139, 146);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(250, 87);
             flowLayoutPanel2.TabIndex = 2;
             // 
-            // button1
+            // btnXembaocao
             // 
-            button1.BackColor = SystemColors.HotTrack;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(247, 40);
-            button1.TabIndex = 0;
-            button1.Text = "Xem báo cáo";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXembaocao.BackColor = SystemColors.HotTrack;
+            btnXembaocao.ForeColor = Color.White;
+            btnXembaocao.Location = new Point(3, 3);
+            btnXembaocao.Name = "btnXembaocao";
+            btnXembaocao.Size = new Size(247, 40);
+            btnXembaocao.TabIndex = 0;
+            btnXembaocao.Text = "Xem báo cáo";
+            btnXembaocao.UseVisualStyleBackColor = false;
+            btnXembaocao.Click += button1_Click;
             // 
-            // button2
+            // btnQuaylai
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(3, 49);
-            button2.Name = "button2";
-            button2.Size = new Size(247, 40);
-            button2.TabIndex = 3;
-            button2.Text = "Quay lại ";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnQuaylai.BackColor = SystemColors.ActiveCaptionText;
+            btnQuaylai.ForeColor = Color.White;
+            btnQuaylai.Location = new Point(3, 49);
+            btnQuaylai.Name = "btnQuaylai";
+            btnQuaylai.Size = new Size(247, 40);
+            btnQuaylai.TabIndex = 3;
+            btnQuaylai.Text = "Quay lại ";
+            btnQuaylai.UseVisualStyleBackColor = false;
+            btnQuaylai.Click += button2_Click;
             // 
             // LapBaoCaoTonKho
             // 
@@ -125,7 +125,7 @@
             Controls.Add(label1);
             Name = "LapBaoCaoTonKho";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Lập Báo Cáo Doanh Thu";
+            Text = "Lập Báo Cáo Tồn Kho";
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
             ResumeLayout(false);
@@ -139,7 +139,7 @@
         private ComboBox cbMonth;
         private ComboBox cbYear;
         private FlowLayoutPanel flowLayoutPanel2;
-        private Button button1;
-        private Button button2;
+        private Button btnXembaocao;
+        private Button btnQuaylai;
     }
 }

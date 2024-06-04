@@ -30,11 +30,11 @@
         {
             label1 = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
+            btnXembaocao = new Button();
+            btnQuaylai = new Button();
             panel1 = new Panel();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
+            dtpkEnd = new DateTimePicker();
+            dtpkStart = new DateTimePicker();
             flowLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -44,93 +44,85 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(-7, 47);
-            label1.Margin = new Padding(7, 0, 7, 0);
+            label1.Location = new Point(-3, 20);
             label1.Name = "label1";
-            label1.Size = new Size(1062, 78);
+            label1.Size = new Size(544, 40);
             label1.TabIndex = 0;
             label1.Text = "LẬP BÁO CÁO NHẬP PHỤ TÙNG";
             // 
             // flowLayoutPanel2
             // 
             flowLayoutPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            flowLayoutPanel2.Controls.Add(button1);
-            flowLayoutPanel2.Controls.Add(button2);
-            flowLayoutPanel2.Location = new Point(330, 343);
-            flowLayoutPanel2.Margin = new Padding(7, 7, 7, 7);
+            flowLayoutPanel2.Controls.Add(btnXembaocao);
+            flowLayoutPanel2.Controls.Add(btnQuaylai);
+            flowLayoutPanel2.Location = new Point(139, 146);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(594, 204);
+            flowLayoutPanel2.Size = new Size(250, 87);
             flowLayoutPanel2.TabIndex = 2;
             // 
-            // button1
+            // btnXembaocao
             // 
-            button1.BackColor = SystemColors.HotTrack;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(7, 7);
-            button1.Margin = new Padding(7, 7, 7, 7);
-            button1.Name = "button1";
-            button1.Size = new Size(587, 94);
-            button1.TabIndex = 0;
-            button1.Text = "Xem báo cáo";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXembaocao.BackColor = SystemColors.HotTrack;
+            btnXembaocao.ForeColor = Color.White;
+            btnXembaocao.Location = new Point(3, 3);
+            btnXembaocao.Name = "btnXembaocao";
+            btnXembaocao.Size = new Size(247, 40);
+            btnXembaocao.TabIndex = 0;
+            btnXembaocao.Text = "Xem báo cáo";
+            btnXembaocao.UseVisualStyleBackColor = false;
+            btnXembaocao.Click += button1_Click;
             // 
-            // button2
+            // btnQuaylai
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(7, 115);
-            button2.Margin = new Padding(7, 7, 7, 7);
-            button2.Name = "button2";
-            button2.Size = new Size(587, 94);
-            button2.TabIndex = 3;
-            button2.Text = "Quay lại ";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnQuaylai.BackColor = SystemColors.ActiveCaptionText;
+            btnQuaylai.ForeColor = Color.White;
+            btnQuaylai.Location = new Point(3, 49);
+            btnQuaylai.Name = "btnQuaylai";
+            btnQuaylai.Size = new Size(247, 40);
+            btnQuaylai.TabIndex = 3;
+            btnQuaylai.Text = "Quay lại ";
+            btnQuaylai.UseVisualStyleBackColor = false;
+            btnQuaylai.Click += button2_Click;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.Controls.Add(dateTimePicker2);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Location = new Point(330, 148);
-            panel1.Margin = new Padding(7, 7, 7, 7);
+            panel1.Controls.Add(dtpkEnd);
+            panel1.Controls.Add(dtpkStart);
+            panel1.Location = new Point(139, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(594, 176);
+            panel1.Size = new Size(250, 75);
             panel1.TabIndex = 3;
             // 
-            // dateTimePicker2
+            // dtpkEnd
             // 
-            dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker2.Format = DateTimePickerFormat.Custom;
-            dateTimePicker2.Location = new Point(0, 92);
-            dateTimePicker2.Margin = new Padding(7, 7, 7, 7);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(588, 54);
-            dateTimePicker2.TabIndex = 1;
+            dtpkEnd.CustomFormat = "dd/MM/yyyy";
+            dtpkEnd.Format = DateTimePickerFormat.Custom;
+            dtpkEnd.Location = new Point(0, 39);
+            dtpkEnd.Name = "dtpkEnd";
+            dtpkEnd.Size = new Size(250, 27);
+            dtpkEnd.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dtpkStart
             // 
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(0, 14);
-            dateTimePicker1.Margin = new Padding(7, 7, 7, 7);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(588, 54);
-            dateTimePicker1.TabIndex = 0;
+            dtpkStart.CustomFormat = "dd/MM/yyyy";
+            dtpkStart.Format = DateTimePickerFormat.Custom;
+            dtpkStart.Location = new Point(0, 6);
+            dtpkStart.Name = "dtpkStart";
+            dtpkStart.Size = new Size(250, 27);
+            dtpkStart.TabIndex = 0;
             // 
             // LapBaoCaoPhieuNhapVTPT
             // 
-            AutoScaleDimensions = new SizeF(19F, 47F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1313, 665);
+            ClientSize = new Size(553, 283);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(label1);
-            Margin = new Padding(7, 7, 7, 7);
             Name = "LapBaoCaoPhieuNhapVTPT";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Lập Báo Cáo Doanh Thu";
+            Text = "Lập Báo Cáo Phiếu Nhập Vật Tư Phụ Tùng";
             flowLayoutPanel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -141,10 +133,10 @@
 
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel2;
-        private Button button1;
-        private Button button2;
+        private Button btnXembaocao;
+        private Button btnQuaylai;
         private Panel panel1;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpkEnd;
+        private DateTimePicker dtpkStart;
     }
 }

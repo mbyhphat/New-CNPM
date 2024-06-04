@@ -28,96 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new Button();
+            btnHuy = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            txbNoidungsuachua = new TextBox();
+            txbGiatiencong = new TextBox();
+            btnXacnhan = new Button();
             SuspendLayout();
             // 
-            // button2
+            // btnHuy
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button2.AutoSize = true;
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(513, 416);
-            button2.Margin = new Padding(7, 7, 7, 7);
-            button2.Name = "button2";
-            button2.Size = new Size(363, 80);
-            button2.TabIndex = 4;
-            button2.Text = "Hủy ";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnHuy.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnHuy.AutoSize = true;
+            btnHuy.BackColor = Color.FromArgb(64, 64, 64);
+            btnHuy.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHuy.ForeColor = Color.White;
+            btnHuy.Location = new Point(216, 177);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(153, 34);
+            btnHuy.TabIndex = 4;
+            btnHuy.Text = "Hủy ";
+            btnHuy.UseVisualStyleBackColor = false;
+            btnHuy.Click += button2_Click;
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(128, 42);
-            label1.Margin = new Padding(7, 0, 7, 0);
+            label1.Location = new Point(54, 18);
             label1.Name = "label1";
-            label1.Size = new Size(681, 87);
+            label1.Size = new Size(341, 44);
             label1.TabIndex = 0;
             label1.Text = "THÊM TIỀN CÔNG";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txbNoidungsuachua
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(5, 174);
-            textBox1.Margin = new Padding(7, 7, 7, 7);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Nội dung công việc ";
-            textBox1.Size = new Size(1028, 47);
-            textBox1.TabIndex = 1;
-            textBox1.TabStop = false;
+            txbNoidungsuachua.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txbNoidungsuachua.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbNoidungsuachua.Location = new Point(2, 74);
+            txbNoidungsuachua.Name = "txbNoidungsuachua";
+            txbNoidungsuachua.PlaceholderText = "Nội dung công việc ";
+            txbNoidungsuachua.Size = new Size(435, 27);
+            txbNoidungsuachua.TabIndex = 1;
+            txbNoidungsuachua.TabStop = false;
             // 
-            // textBox2
+            // txbGiatiencong
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(5, 273);
-            textBox2.Margin = new Padding(7, 7, 7, 7);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Tiền công ";
-            textBox2.Size = new Size(1028, 47);
-            textBox2.TabIndex = 2;
-            textBox2.TabStop = false;
+            txbGiatiencong.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txbGiatiencong.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbGiatiencong.Location = new Point(2, 116);
+            txbGiatiencong.Name = "txbGiatiencong";
+            txbGiatiencong.PlaceholderText = "Tiền công ";
+            txbGiatiencong.Size = new Size(435, 27);
+            txbGiatiencong.TabIndex = 2;
+            txbGiatiencong.TabStop = false;
             // 
-            // button1
+            // btnXacnhan
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.AutoSize = true;
-            button1.BackColor = Color.DodgerBlue;
-            button1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Red;
-            button1.Location = new Point(128, 416);
-            button1.Margin = new Padding(7, 7, 7, 7);
-            button1.Name = "button1";
-            button1.Size = new Size(363, 80);
-            button1.TabIndex = 3;
-            button1.Text = "Xác nhận ";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXacnhan.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnXacnhan.AutoSize = true;
+            btnXacnhan.BackColor = Color.DodgerBlue;
+            btnXacnhan.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXacnhan.ForeColor = Color.Red;
+            btnXacnhan.Location = new Point(54, 177);
+            btnXacnhan.Name = "btnXacnhan";
+            btnXacnhan.Size = new Size(153, 34);
+            btnXacnhan.TabIndex = 3;
+            btnXacnhan.Text = "Xác nhận ";
+            btnXacnhan.UseVisualStyleBackColor = false;
+            btnXacnhan.Click += button1_Click;
             // 
             // ThemTienCong
             // 
-            AutoScaleDimensions = new SizeF(19F, 47F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1043, 557);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(439, 237);
+            Controls.Add(btnHuy);
+            Controls.Add(btnXacnhan);
+            Controls.Add(txbGiatiencong);
+            Controls.Add(txbNoidungsuachua);
             Controls.Add(label1);
-            Margin = new Padding(7, 7, 7, 7);
             Name = "ThemTienCong";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Thêm phụ tùng";
+            Text = "Thêm tiền công";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,9 +119,9 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private TextBox txbNoidungsuachua;
+        private TextBox txbGiatiencong;
+        private Button btnXacnhan;
+        private Button btnHuy;
     }
 }

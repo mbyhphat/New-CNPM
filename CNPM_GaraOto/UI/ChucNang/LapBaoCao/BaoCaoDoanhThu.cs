@@ -30,7 +30,7 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         {
             int month = Convert.ToInt32(lbMonth.Text);
             int year = Convert.ToInt32(lbYear.Text);
-            dataGridView1.DataSource = ChiTietBaoCaoDoanhThuDAO.Instance.LapBaoCaoDoanhSo(month, year);
+            dtgvBaocaodoanhthu.DataSource = ChiTietBaoCaoDoanhThuDAO.Instance.LapBaoCaoDoanhSo(month, year);
         }
 
         void GetTongDoanhThu()

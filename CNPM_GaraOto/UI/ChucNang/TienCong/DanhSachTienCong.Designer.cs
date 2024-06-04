@@ -34,7 +34,7 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnSua = new Button();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgvNoidungsuachua = new DataGridView();
             txbNoidung = new TextBox();
             label2 = new Label();
             txbTiencong = new TextBox();
@@ -45,7 +45,7 @@
             btnSearch = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvNoidungsuachua).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -117,24 +117,24 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgvNoidungsuachua);
             panel1.Location = new Point(1, 241);
             panel1.Name = "panel1";
             panel1.Size = new Size(815, 292);
             panel1.TabIndex = 8;
             // 
-            // dataGridView1
+            // dtgvNoidungsuachua
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(812, 289);
-            dataGridView1.TabIndex = 0;
+            dtgvNoidungsuachua.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dtgvNoidungsuachua.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvNoidungsuachua.BackgroundColor = SystemColors.Control;
+            dtgvNoidungsuachua.BorderStyle = BorderStyle.None;
+            dtgvNoidungsuachua.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvNoidungsuachua.Location = new Point(0, 3);
+            dtgvNoidungsuachua.Name = "dtgvNoidungsuachua";
+            dtgvNoidungsuachua.RowHeadersWidth = 51;
+            dtgvNoidungsuachua.Size = new Size(812, 289);
+            dtgvNoidungsuachua.TabIndex = 0;
             // 
             // txbNoidung
             // 
@@ -242,7 +242,7 @@
             Text = "Nội dung sửa chữa";
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvNoidungsuachua).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -264,7 +264,7 @@
         private Label label4;
         private Label label5;
         private Panel panel2;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvNoidungsuachua;
         private TextBox txbMatc;
         private Label label1;
         private Button btnSearch;

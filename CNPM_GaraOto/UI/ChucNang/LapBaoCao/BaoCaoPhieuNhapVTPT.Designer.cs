@@ -30,10 +30,10 @@
         {
             textBox1 = new TextBox();
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgvBaocaonhapvtpt = new DataGridView();
             label2 = new Label();
             panel2 = new Panel();
-            lbDoanhthu = new Label();
+            lbTongtiennhap = new Label();
             panel3 = new Panel();
             flowLayoutPanel2 = new FlowLayoutPanel();
             textBox2 = new TextBox();
@@ -44,7 +44,7 @@
             button1 = new Button();
             button2 = new Button();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaonhapvtpt).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -68,25 +68,25 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgvBaocaonhapvtpt);
             panel1.Location = new Point(-1, 89);
             panel1.Name = "panel1";
             panel1.Size = new Size(808, 372);
             panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // dtgvBaocaonhapvtpt
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(805, 366);
-            dataGridView1.TabIndex = 0;
+            dtgvBaocaonhapvtpt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dtgvBaocaonhapvtpt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvBaocaonhapvtpt.BackgroundColor = SystemColors.Control;
+            dtgvBaocaonhapvtpt.BorderStyle = BorderStyle.None;
+            dtgvBaocaonhapvtpt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvBaocaonhapvtpt.Location = new Point(3, 3);
+            dtgvBaocaonhapvtpt.Name = "dtgvBaocaonhapvtpt";
+            dtgvBaocaonhapvtpt.ReadOnly = true;
+            dtgvBaocaonhapvtpt.RowHeadersWidth = 51;
+            dtgvBaocaonhapvtpt.Size = new Size(805, 366);
+            dtgvBaocaonhapvtpt.TabIndex = 0;
             // 
             // label2
             // 
@@ -102,22 +102,22 @@
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.Controls.Add(lbDoanhthu);
+            panel2.Controls.Add(lbTongtiennhap);
             panel2.Controls.Add(label2);
             panel2.Location = new Point(437, 464);
             panel2.Name = "panel2";
             panel2.Size = new Size(370, 55);
             panel2.TabIndex = 5;
             // 
-            // lbDoanhthu
+            // lbTongtiennhap
             // 
-            lbDoanhthu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lbDoanhthu.AutoSize = true;
-            lbDoanhthu.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbDoanhthu.Location = new Point(186, 11);
-            lbDoanhthu.Name = "lbDoanhthu";
-            lbDoanhthu.Size = new Size(0, 21);
-            lbDoanhthu.TabIndex = 4;
+            lbTongtiennhap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lbTongtiennhap.AutoSize = true;
+            lbTongtiennhap.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbTongtiennhap.Location = new Point(186, 11);
+            lbTongtiennhap.Name = "lbTongtiennhap";
+            lbTongtiennhap.Size = new Size(0, 21);
+            lbTongtiennhap.TabIndex = 4;
             // 
             // panel3
             // 
@@ -242,9 +242,9 @@
             Controls.Add(textBox1);
             Name = "BaoCaoPhieuNhapVTPT";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Báo Cáo Doanh Thu";
+            Text = "Báo Cáo Phiếu Nhập Vật Tư Phụ Tùng";
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvBaocaonhapvtpt).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -259,10 +259,10 @@
 
         private TextBox textBox1;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvBaocaonhapvtpt;
         private Label label2;
         private Panel panel2;
-        private Label lbDoanhthu;
+        private Label lbTongtiennhap;
         private Panel panel3;
         private FlowLayoutPanel flowLayoutPanel2;
         private TextBox textBox2;

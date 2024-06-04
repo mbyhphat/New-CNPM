@@ -31,14 +31,14 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
+            txbSoluong = new TextBox();
             label4 = new Label();
-            button1 = new Button();
+            btnXacnhan = new Button();
             label5 = new Label();
-            button2 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            btnThoat = new Button();
+            dtpNgaysuachua = new DateTimePicker();
+            cbNoidung = new ComboBox();
+            cbVattuphutung = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -71,13 +71,13 @@
             label3.TabIndex = 4;
             label3.Text = "Vật tư phụ tùng";
             // 
-            // textBox4
+            // txbSoluong
             // 
-            textBox4.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(152, 201);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(263, 28);
-            textBox4.TabIndex = 7;
+            txbSoluong.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbSoluong.Location = new Point(152, 201);
+            txbSoluong.Name = "txbSoluong";
+            txbSoluong.Size = new Size(263, 28);
+            txbSoluong.TabIndex = 7;
             // 
             // label4
             // 
@@ -89,18 +89,18 @@
             label4.TabIndex = 6;
             label4.Text = "Số lượng";
             // 
-            // button1
+            // btnXacnhan
             // 
-            button1.BackColor = Color.Red;
-            button1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(12, 261);
-            button1.Name = "button1";
-            button1.Size = new Size(249, 50);
-            button1.TabIndex = 8;
-            button1.Text = "Xác nhận";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnXacnhan.BackColor = Color.Red;
+            btnXacnhan.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnXacnhan.ForeColor = SystemColors.ButtonHighlight;
+            btnXacnhan.Location = new Point(12, 261);
+            btnXacnhan.Name = "btnXacnhan";
+            btnXacnhan.Size = new Size(249, 50);
+            btnXacnhan.TabIndex = 8;
+            btnXacnhan.Text = "Xác nhận";
+            btnXacnhan.UseVisualStyleBackColor = false;
+            btnXacnhan.Click += button1_Click;
             // 
             // label5
             // 
@@ -112,59 +112,59 @@
             label5.TabIndex = 9;
             label5.Text = "THÊM CHI TIẾT SỬA CHỮA";
             // 
-            // button2
+            // btnThoat
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(264, 261);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 50);
-            button2.TabIndex = 10;
-            button2.Text = "Thoát";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnThoat.BackColor = SystemColors.ActiveCaptionText;
+            btnThoat.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThoat.ForeColor = SystemColors.ButtonHighlight;
+            btnThoat.Location = new Point(264, 261);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(151, 50);
+            btnThoat.TabIndex = 10;
+            btnThoat.Text = "Thoát";
+            btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += button2_Click;
             // 
-            // dateTimePicker1
+            // dtpNgaysuachua
             // 
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(152, 63);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(260, 28);
-            dateTimePicker1.TabIndex = 11;
+            dtpNgaysuachua.CustomFormat = "dd/MM/yyyy";
+            dtpNgaysuachua.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpNgaysuachua.Format = DateTimePickerFormat.Custom;
+            dtpNgaysuachua.Location = new Point(152, 63);
+            dtpNgaysuachua.Name = "dtpNgaysuachua";
+            dtpNgaysuachua.Size = new Size(260, 28);
+            dtpNgaysuachua.TabIndex = 11;
             // 
-            // comboBox1
+            // cbNoidung
             // 
-            comboBox1.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(152, 108);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(260, 29);
-            comboBox1.TabIndex = 12;
+            cbNoidung.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbNoidung.FormattingEnabled = true;
+            cbNoidung.Location = new Point(152, 108);
+            cbNoidung.Name = "cbNoidung";
+            cbNoidung.Size = new Size(260, 29);
+            cbNoidung.TabIndex = 12;
             // 
-            // comboBox2
+            // cbVattuphutung
             // 
-            comboBox2.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(152, 156);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(260, 29);
-            comboBox2.TabIndex = 13;
+            cbVattuphutung.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbVattuphutung.FormattingEnabled = true;
+            cbVattuphutung.Location = new Point(152, 156);
+            cbVattuphutung.Name = "cbVattuphutung";
+            cbVattuphutung.Size = new Size(260, 29);
+            cbVattuphutung.TabIndex = 13;
             // 
             // ThemChiTietPhieuSuaChua
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(431, 315);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(button2);
+            Controls.Add(cbVattuphutung);
+            Controls.Add(cbNoidung);
+            Controls.Add(dtpNgaysuachua);
+            Controls.Add(btnThoat);
             Controls.Add(label5);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
+            Controls.Add(btnXacnhan);
+            Controls.Add(txbSoluong);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -180,13 +180,13 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox txbSoluong;
         private Label label4;
-        private Button button1;
+        private Button btnXacnhan;
         private Label label5;
-        private Button button2;
-        private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private Button btnThoat;
+        private DateTimePicker dtpNgaysuachua;
+        private ComboBox cbNoidung;
+        private ComboBox cbVattuphutung;
     }
 }

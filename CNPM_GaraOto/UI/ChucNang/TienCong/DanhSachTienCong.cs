@@ -22,7 +22,7 @@ namespace CNPM_GaraOto.UI.ChucNang.TienCong
         }
         void LoadTienCong()
         {
-            dataGridView1.DataSource = TienCongDAO.Instance.GetTienCong();
+            dtgvNoidungsuachua.DataSource = TienCongDAO.Instance.GetTienCong();
         }
         void AddTienCongBinding()
         {
@@ -30,9 +30,9 @@ namespace CNPM_GaraOto.UI.ChucNang.TienCong
             txbNoidung.DataBindings.Clear();
             txbTiencong.DataBindings.Clear();
 
-            txbMatc.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "MaTienCong", true, DataSourceUpdateMode.Never));
-            txbNoidung.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "NoiDung", true, DataSourceUpdateMode.Never));
-            txbTiencong.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "SoTienCong", true, DataSourceUpdateMode.Never));
+            txbMatc.DataBindings.Add(new Binding("Text", dtgvNoidungsuachua.DataSource, "MaTienCong", true, DataSourceUpdateMode.Never));
+            txbNoidung.DataBindings.Add(new Binding("Text", dtgvNoidungsuachua.DataSource, "NoiDung", true, DataSourceUpdateMode.Never));
+            txbTiencong.DataBindings.Add(new Binding("Text", dtgvNoidungsuachua.DataSource, "SoTienCong", true, DataSourceUpdateMode.Never));
         }
         List<TienCong_DTO> SearchTienCongByName(string name)
         {
@@ -42,7 +42,7 @@ namespace CNPM_GaraOto.UI.ChucNang.TienCong
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = SearchTienCongByName(txbSearch.Text);
+            dtgvNoidungsuachua.DataSource = SearchTienCongByName(txbSearch.Text);
             AddTienCongBinding();
         }
 

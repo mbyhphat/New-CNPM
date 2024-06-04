@@ -21,19 +21,19 @@ namespace CNPM_GaraOto.UI.ChucNang.LapBaoCao
         void LoadDateTimePicker()
         {
             DateTime today = DateTime.Now;
-            dateTimePicker1.Value = new DateTime(today.Year, today.Month, 1);
-            dateTimePicker2.Value = dateTimePicker1.Value.AddMonths(1).AddDays(-1);
+            dtpkStart.Value = new DateTime(today.Year, today.Month, 1);
+            dtpkEnd.Value = dtpkStart.Value.AddMonths(1).AddDays(-1);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime start = dateTimePicker1.Value;
-            DateTime end = dateTimePicker2.Value;
+            DateTime start = dtpkStart.Value;
+            DateTime end = dtpkEnd.Value;
             if (start != null && end != null)
             {
                 if (start < end)
                 {
-                    BaoCaoPhieuNhapVTPT baocao = new BaoCaoPhieuNhapVTPT(dateTimePicker1.Value, dateTimePicker2.Value);
+                    BaoCaoPhieuNhapVTPT baocao = new BaoCaoPhieuNhapVTPT(dtpkStart.Value, dtpkEnd.Value);
                     this.Hide();
                     baocao.ShowDialog();
                     this.Show();
