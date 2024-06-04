@@ -31,14 +31,14 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            textBox1 = new TextBox();
-            button3 = new Button();
-            button2 = new Button();
+            SoXeTiepNhan_TextBox = new TextBox();
+            LuuSoXe_Button = new Button();
+            ThemHieuXe_Button = new Button();
             label4 = new Label();
-            textBox4 = new TextBox();
-            button4 = new Button();
-            button5 = new Button();
-            textBox3 = new TextBox();
+            TenHieuXeMoi_TextBox = new TextBox();
+            DanhSachHieuXe_Button = new Button();
+            LuuTiLe_Button = new Button();
+            TiLeDonGiaNhapBan_TextBox = new TextBox();
             label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -50,7 +50,7 @@
             label1.Font = new Font("Arial", 20F);
             label1.Location = new Point(203, 7);
             label1.Name = "label1";
-            label1.Size = new Size(427, 39);
+            label1.Size = new Size(848, 75);
             label1.TabIndex = 0;
             label1.Text = "THAY ĐỔI CÁC QUY ĐỊNH";
             // 
@@ -71,43 +71,43 @@
             label2.AutoSize = true;
             label2.Location = new Point(14, 99);
             label2.Name = "label2";
-            label2.Size = new Size(220, 16);
+            label2.Size = new Size(433, 32);
             label2.TabIndex = 3;
             label2.Text = "Số xe tiếp nhận tối đa trong ngày:";
             // 
-            // textBox1
+            // SoXeTiepNhan_TextBox
             // 
-            textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(240, 96);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(57, 23);
-            textBox1.TabIndex = 4;
+            SoXeTiepNhan_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            SoXeTiepNhan_TextBox.Location = new Point(240, 96);
+            SoXeTiepNhan_TextBox.Name = "SoXeTiepNhan_TextBox";
+            SoXeTiepNhan_TextBox.Size = new Size(57, 39);
+            SoXeTiepNhan_TextBox.TabIndex = 4;
             // 
-            // button3
+            // LuuSoXe_Button
             // 
-            button3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button3.BackColor = SystemColors.ActiveCaptionText;
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(297, 92);
-            button3.Name = "button3";
-            button3.Size = new Size(73, 36);
-            button3.TabIndex = 5;
-            button3.Text = "Lưu";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            LuuSoXe_Button.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            LuuSoXe_Button.BackColor = SystemColors.ActiveCaptionText;
+            LuuSoXe_Button.ForeColor = SystemColors.ButtonHighlight;
+            LuuSoXe_Button.Location = new Point(297, 92);
+            LuuSoXe_Button.Name = "LuuSoXe_Button";
+            LuuSoXe_Button.Size = new Size(73, 36);
+            LuuSoXe_Button.TabIndex = 5;
+            LuuSoXe_Button.Text = "Lưu";
+            LuuSoXe_Button.UseVisualStyleBackColor = false;
+            LuuSoXe_Button.Click += button3_Click;
             // 
-            // button2
+            // ThemHieuXe_Button
             // 
-            button2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(297, 57);
-            button2.Name = "button2";
-            button2.Size = new Size(73, 33);
-            button2.TabIndex = 11;
-            button2.Text = "Thêm";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
+            ThemHieuXe_Button.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ThemHieuXe_Button.BackColor = SystemColors.ActiveCaptionText;
+            ThemHieuXe_Button.ForeColor = SystemColors.ButtonHighlight;
+            ThemHieuXe_Button.Location = new Point(297, 57);
+            ThemHieuXe_Button.Name = "ThemHieuXe_Button";
+            ThemHieuXe_Button.Size = new Size(73, 33);
+            ThemHieuXe_Button.TabIndex = 11;
+            ThemHieuXe_Button.Text = "Thêm";
+            ThemHieuXe_Button.UseVisualStyleBackColor = false;
+            ThemHieuXe_Button.Click += button2_Click_1;
             // 
             // label4
             // 
@@ -115,52 +115,52 @@
             label4.AutoSize = true;
             label4.Location = new Point(14, 64);
             label4.Name = "label4";
-            label4.Size = new Size(92, 16);
+            label4.Size = new Size(183, 32);
             label4.TabIndex = 9;
             label4.Text = "Thêm hiệu xe";
             // 
-            // textBox4
+            // TenHieuXeMoi_TextBox
             // 
-            textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox4.Location = new Point(112, 60);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(185, 23);
-            textBox4.TabIndex = 12;
+            TenHieuXeMoi_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            TenHieuXeMoi_TextBox.Location = new Point(112, 60);
+            TenHieuXeMoi_TextBox.Name = "TenHieuXeMoi_TextBox";
+            TenHieuXeMoi_TextBox.Size = new Size(185, 39);
+            TenHieuXeMoi_TextBox.TabIndex = 12;
             // 
-            // button4
+            // DanhSachHieuXe_Button
             // 
-            button4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button4.BackColor = SystemColors.ActiveCaptionText;
-            button4.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.Location = new Point(390, 58);
-            button4.Name = "button4";
-            button4.Size = new Size(356, 43);
-            button4.TabIndex = 13;
-            button4.Text = "Xem các hiệu xe";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            DanhSachHieuXe_Button.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            DanhSachHieuXe_Button.BackColor = SystemColors.ActiveCaptionText;
+            DanhSachHieuXe_Button.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DanhSachHieuXe_Button.ForeColor = SystemColors.ButtonHighlight;
+            DanhSachHieuXe_Button.Location = new Point(390, 58);
+            DanhSachHieuXe_Button.Name = "DanhSachHieuXe_Button";
+            DanhSachHieuXe_Button.Size = new Size(356, 43);
+            DanhSachHieuXe_Button.TabIndex = 13;
+            DanhSachHieuXe_Button.Text = "Xem các hiệu xe";
+            DanhSachHieuXe_Button.UseVisualStyleBackColor = false;
+            DanhSachHieuXe_Button.Click += button4_Click;
             // 
-            // button5
+            // LuuTiLe_Button
             // 
-            button5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button5.BackColor = SystemColors.ActiveCaptionText;
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(297, 131);
-            button5.Name = "button5";
-            button5.Size = new Size(73, 37);
-            button5.TabIndex = 16;
-            button5.Text = "Lưu";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            LuuTiLe_Button.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            LuuTiLe_Button.BackColor = SystemColors.ActiveCaptionText;
+            LuuTiLe_Button.ForeColor = SystemColors.ButtonHighlight;
+            LuuTiLe_Button.Location = new Point(297, 131);
+            LuuTiLe_Button.Name = "LuuTiLe_Button";
+            LuuTiLe_Button.Size = new Size(73, 37);
+            LuuTiLe_Button.TabIndex = 16;
+            LuuTiLe_Button.Text = "Lưu";
+            LuuTiLe_Button.UseVisualStyleBackColor = false;
+            LuuTiLe_Button.Click += button5_Click;
             // 
-            // textBox3
+            // TiLeDonGiaNhapBan_TextBox
             // 
-            textBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox3.Location = new Point(240, 134);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(57, 23);
-            textBox3.TabIndex = 15;
+            TiLeDonGiaNhapBan_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            TiLeDonGiaNhapBan_TextBox.Location = new Point(240, 134);
+            TiLeDonGiaNhapBan_TextBox.Name = "TiLeDonGiaNhapBan_TextBox";
+            TiLeDonGiaNhapBan_TextBox.Size = new Size(57, 39);
+            TiLeDonGiaNhapBan_TextBox.TabIndex = 15;
             // 
             // label5
             // 
@@ -168,24 +168,24 @@
             label5.AutoSize = true;
             label5.Location = new Point(14, 137);
             label5.Name = "label5";
-            label5.Size = new Size(154, 16);
+            label5.Size = new Size(304, 32);
             label5.TabIndex = 14;
             label5.Text = "Tỉ lệ đơn giá nhập/bán:";
             // 
             // ThayDoiQuyDinh
             // 
-            AutoScaleDimensions = new SizeF(8F, 16F);
+            AutoScaleDimensions = new SizeF(16F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(806, 354);
-            Controls.Add(button5);
-            Controls.Add(textBox3);
+            Controls.Add(LuuTiLe_Button);
+            Controls.Add(TiLeDonGiaNhapBan_TextBox);
             Controls.Add(label5);
-            Controls.Add(button4);
-            Controls.Add(textBox4);
-            Controls.Add(button2);
+            Controls.Add(DanhSachHieuXe_Button);
+            Controls.Add(TenHieuXeMoi_TextBox);
+            Controls.Add(ThemHieuXe_Button);
             Controls.Add(label4);
-            Controls.Add(button3);
-            Controls.Add(textBox1);
+            Controls.Add(LuuSoXe_Button);
+            Controls.Add(SoXeTiepNhan_TextBox);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -202,14 +202,14 @@
         private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
-        private TextBox textBox1;
-        private Button button3;
-        private Button button2;
+        private TextBox SoXeTiepNhan_TextBox;
+        private Button LuuSoXe_Button;
+        private Button ThemHieuXe_Button;
         private Label label4;
-        private TextBox textBox4;
-        private Button button4;
-        private Button button5;
-        private TextBox textBox3;
+        private TextBox TenHieuXeMoi_TextBox;
+        private Button DanhSachHieuXe_Button;
+        private Button LuuTiLe_Button;
+        private TextBox TiLeDonGiaNhapBan_TextBox;
         private Label label5;
     }
 }

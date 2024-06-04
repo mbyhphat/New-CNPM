@@ -39,7 +39,7 @@ namespace CNPM_GaraOto.UI.ChucNang.ThayDoiQuyDinh
                 DialogResult messageBox = MessageBox.Show("Thêm hiệu xe", "Bạn có muốn thêm hiệu xe này?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (messageBox == DialogResult.Yes)
                 {
-                    string newHieuXe = textBox4.Text.ToString();
+                    string newHieuXe = TenHieuXeMoi_TextBox.Text.ToString();
                     if (ThemHieuXeDAO.Instance.AddHieuXe(newHieuXe))
                     {
                         MessageBox.Show("Thêm thành công");
@@ -65,15 +65,15 @@ namespace CNPM_GaraOto.UI.ChucNang.ThayDoiQuyDinh
             DataTable dttb = DataProvider.Instance.ExecuteQuery(querry);
             DataRow ts = dttb.Rows[0];
             ThamSo_DTO thamso = new ThamSo_DTO(ts);
-            textBox1.Text = thamso.SoXeTiepNhanToiDa.ToString();
-            textBox3.Text = thamso.TiLeDonGiaBan.ToString();
+            SoXeTiepNhan_TextBox.Text = thamso.SoXeTiepNhanToiDa.ToString();
+            TiLeDonGiaNhapBan_TextBox.Text = thamso.TiLeDonGiaBan.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (AccountDAO.Instance.getVaitro())
             {
-                int soxemoi = Convert.ToInt32(textBox1.Text.ToString());
+                int soxemoi = Convert.ToInt32(SoXeTiepNhan_TextBox.Text.ToString());
                 DialogResult messageBox = MessageBox.Show("Bạn có muốn lưu các thay đổi?",
                     "Thay đổi số xe tiếp nhận tối đa trong ngày", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (messageBox == DialogResult.Yes)
@@ -99,7 +99,7 @@ namespace CNPM_GaraOto.UI.ChucNang.ThayDoiQuyDinh
         {
             if (AccountDAO.Instance.getVaitro())
             {
-                Decimal tilemoi = Decimal.Parse(textBox3.Text.ToString());
+                Decimal tilemoi = Decimal.Parse(TiLeDonGiaNhapBan_TextBox.Text.ToString());
                 DialogResult messageBox = MessageBox.Show("Bạn có muốn lưu các thay đổi?",
                     "Thay đổi tỉ lệ đơn giá bán", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (messageBox == DialogResult.Yes)

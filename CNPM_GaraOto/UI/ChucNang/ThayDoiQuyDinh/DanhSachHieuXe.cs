@@ -28,7 +28,7 @@ namespace CNPM_GaraOto.UI.ChucNang.ThayDoiQuyDinh
         private void LoadHieuXe()
         {
             List<DTO.HieuXe_DTO> list = DanhsachhieuxeDAO.Instance.LoadListHieuXe();
-            dataGridView1.DataSource = list;  
+            DanhSachHieuXe_DtGridView.DataSource = list;  
         }  
         
 
