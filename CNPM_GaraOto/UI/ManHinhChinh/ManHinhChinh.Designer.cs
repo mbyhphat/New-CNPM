@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            button8 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button9 = new Button();
+            TienCong_Button = new Button();
+            BaoCaoTonKho_Button = new Button();
+            VatTuPhuTung_Button = new Button();
+            LapPhieuSuaChua_Button = new Button();
+            TraCuuXe_Button = new Button();
+            TiepNhanXe_Button = new Button();
+            BaoCaoDoanhThu_Button = new Button();
+            ThayDoiQuyDinh_Button = new Button();
+            BaoCaoPhieuNhap_Button = new Button();
             tableLayoutPanel2 = new TableLayoutPanel();
             label3 = new Label();
             pictureBox1 = new PictureBox();
@@ -60,140 +60,150 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.1F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.1F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.1F));
-            tableLayoutPanel1.Controls.Add(button8, 0, 0);
-            tableLayoutPanel1.Controls.Add(button5, 4, 0);
-            tableLayoutPanel1.Controls.Add(button4, 3, 0);
-            tableLayoutPanel1.Controls.Add(button3, 2, 0);
-            tableLayoutPanel1.Controls.Add(button2, 1, 0);
-            tableLayoutPanel1.Controls.Add(button1, 0, 0);
-            tableLayoutPanel1.Controls.Add(button6, 5, 0);
-            tableLayoutPanel1.Controls.Add(button7, 6, 0);
-            tableLayoutPanel1.Controls.Add(button9, 8, 0);
+            tableLayoutPanel1.Controls.Add(TienCong_Button, 0, 0);
+            tableLayoutPanel1.Controls.Add(BaoCaoTonKho_Button, 4, 0);
+            tableLayoutPanel1.Controls.Add(VatTuPhuTung_Button, 3, 0);
+            tableLayoutPanel1.Controls.Add(LapPhieuSuaChua_Button, 2, 0);
+            tableLayoutPanel1.Controls.Add(TraCuuXe_Button, 1, 0);
+            tableLayoutPanel1.Controls.Add(TiepNhanXe_Button, 0, 0);
+            tableLayoutPanel1.Controls.Add(BaoCaoDoanhThu_Button, 5, 0);
+            tableLayoutPanel1.Controls.Add(ThayDoiQuyDinh_Button, 6, 0);
+            tableLayoutPanel1.Controls.Add(BaoCaoPhieuNhap_Button, 8, 0);
             tableLayoutPanel1.Dock = DockStyle.Top;
             tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new Padding(7, 7, 7, 7);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1023, 62);
+            tableLayoutPanel1.Size = new Size(2430, 146);
             tableLayoutPanel1.TabIndex = 0;
             // 
-            // button8
+            // TienCong_Button
             // 
-            button8.BackColor = SystemColors.ActiveCaptionText;
-            button8.Dock = DockStyle.Fill;
-            button8.ForeColor = SystemColors.ButtonHighlight;
-            button8.Location = new Point(117, 3);
-            button8.Name = "button8";
-            button8.Size = new Size(107, 56);
-            button8.TabIndex = 7;
-            button8.Text = "Nội dung sửa chữa";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click_1;
+            TienCong_Button.BackColor = SystemColors.ActiveCaptionText;
+            TienCong_Button.Dock = DockStyle.Fill;
+            TienCong_Button.ForeColor = SystemColors.ButtonHighlight;
+            TienCong_Button.Location = new Point(279, 7);
+            TienCong_Button.Margin = new Padding(7, 7, 7, 7);
+            TienCong_Button.Name = "TienCong_Button";
+            TienCong_Button.Size = new Size(255, 132);
+            TienCong_Button.TabIndex = 7;
+            TienCong_Button.Text = "Nội dung sửa chữa";
+            TienCong_Button.UseVisualStyleBackColor = false;
+            TienCong_Button.Click += button8_Click_1;
             // 
-            // button5
+            // BaoCaoTonKho_Button
             // 
-            button5.BackColor = SystemColors.ActiveCaptionText;
-            button5.Dock = DockStyle.Fill;
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(569, 3);
-            button5.Name = "button5";
-            button5.Size = new Size(107, 56);
-            button5.TabIndex = 4;
-            button5.Text = "Lập báo cáo tồn";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            BaoCaoTonKho_Button.BackColor = SystemColors.ActiveCaptionText;
+            BaoCaoTonKho_Button.Dock = DockStyle.Fill;
+            BaoCaoTonKho_Button.ForeColor = SystemColors.ButtonHighlight;
+            BaoCaoTonKho_Button.Location = new Point(1355, 7);
+            BaoCaoTonKho_Button.Margin = new Padding(7, 7, 7, 7);
+            BaoCaoTonKho_Button.Name = "BaoCaoTonKho_Button";
+            BaoCaoTonKho_Button.Size = new Size(255, 132);
+            BaoCaoTonKho_Button.TabIndex = 4;
+            BaoCaoTonKho_Button.Text = "Lập báo cáo tồn";
+            BaoCaoTonKho_Button.UseVisualStyleBackColor = false;
+            BaoCaoTonKho_Button.Click += button5_Click;
             // 
-            // button4
+            // VatTuPhuTung_Button
             // 
-            button4.BackColor = SystemColors.ActiveCaptionText;
-            button4.Dock = DockStyle.Fill;
-            button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.Location = new Point(456, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(107, 56);
-            button4.TabIndex = 3;
-            button4.Text = "Vật tư phụ tùng";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            VatTuPhuTung_Button.BackColor = SystemColors.ActiveCaptionText;
+            VatTuPhuTung_Button.Dock = DockStyle.Fill;
+            VatTuPhuTung_Button.ForeColor = SystemColors.ButtonHighlight;
+            VatTuPhuTung_Button.Location = new Point(1086, 7);
+            VatTuPhuTung_Button.Margin = new Padding(7, 7, 7, 7);
+            VatTuPhuTung_Button.Name = "VatTuPhuTung_Button";
+            VatTuPhuTung_Button.Size = new Size(255, 132);
+            VatTuPhuTung_Button.TabIndex = 3;
+            VatTuPhuTung_Button.Text = "Vật tư phụ tùng";
+            VatTuPhuTung_Button.UseVisualStyleBackColor = false;
+            VatTuPhuTung_Button.Click += button4_Click;
             // 
-            // button3
+            // LapPhieuSuaChua_Button
             // 
-            button3.BackColor = SystemColors.ActiveCaptionText;
-            button3.Dock = DockStyle.Fill;
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(343, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(107, 56);
-            button3.TabIndex = 2;
-            button3.Text = "Lập phiếu sửa chữa";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            LapPhieuSuaChua_Button.BackColor = SystemColors.ActiveCaptionText;
+            LapPhieuSuaChua_Button.Dock = DockStyle.Fill;
+            LapPhieuSuaChua_Button.ForeColor = SystemColors.ButtonHighlight;
+            LapPhieuSuaChua_Button.Location = new Point(817, 7);
+            LapPhieuSuaChua_Button.Margin = new Padding(7, 7, 7, 7);
+            LapPhieuSuaChua_Button.Name = "LapPhieuSuaChua_Button";
+            LapPhieuSuaChua_Button.Size = new Size(255, 132);
+            LapPhieuSuaChua_Button.TabIndex = 2;
+            LapPhieuSuaChua_Button.Text = "Lập phiếu sửa chữa";
+            LapPhieuSuaChua_Button.UseVisualStyleBackColor = false;
+            LapPhieuSuaChua_Button.Click += button3_Click;
             // 
-            // button2
+            // TraCuuXe_Button
             // 
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.Dock = DockStyle.Fill;
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(230, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 56);
-            button2.TabIndex = 1;
-            button2.Text = "Tra cứu xe";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            TraCuuXe_Button.BackColor = SystemColors.ActiveCaptionText;
+            TraCuuXe_Button.Dock = DockStyle.Fill;
+            TraCuuXe_Button.ForeColor = SystemColors.ButtonHighlight;
+            TraCuuXe_Button.Location = new Point(548, 7);
+            TraCuuXe_Button.Margin = new Padding(7, 7, 7, 7);
+            TraCuuXe_Button.Name = "TraCuuXe_Button";
+            TraCuuXe_Button.Size = new Size(255, 132);
+            TraCuuXe_Button.TabIndex = 1;
+            TraCuuXe_Button.Text = "Tra cứu xe";
+            TraCuuXe_Button.UseVisualStyleBackColor = false;
+            TraCuuXe_Button.Click += button2_Click;
             // 
-            // button1
+            // TiepNhanXe_Button
             // 
-            button1.BackColor = SystemColors.ActiveCaptionText;
-            button1.Dock = DockStyle.Fill;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(108, 56);
-            button1.TabIndex = 0;
-            button1.Text = "Tiếp nhận xe";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            TiepNhanXe_Button.BackColor = SystemColors.ActiveCaptionText;
+            TiepNhanXe_Button.Dock = DockStyle.Fill;
+            TiepNhanXe_Button.ForeColor = SystemColors.ButtonHighlight;
+            TiepNhanXe_Button.Location = new Point(7, 7);
+            TiepNhanXe_Button.Margin = new Padding(7, 7, 7, 7);
+            TiepNhanXe_Button.Name = "TiepNhanXe_Button";
+            TiepNhanXe_Button.Size = new Size(258, 132);
+            TiepNhanXe_Button.TabIndex = 0;
+            TiepNhanXe_Button.Text = "Tiếp nhận xe";
+            TiepNhanXe_Button.UseVisualStyleBackColor = false;
+            TiepNhanXe_Button.Click += button1_Click;
             // 
-            // button6
+            // BaoCaoDoanhThu_Button
             // 
-            button6.BackColor = SystemColors.ActiveCaptionText;
-            button6.Dock = DockStyle.Fill;
-            button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(682, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(107, 56);
-            button6.TabIndex = 5;
-            button6.Text = "Lập báo cáo doanh thu";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            BaoCaoDoanhThu_Button.BackColor = SystemColors.ActiveCaptionText;
+            BaoCaoDoanhThu_Button.Dock = DockStyle.Fill;
+            BaoCaoDoanhThu_Button.ForeColor = SystemColors.ButtonHighlight;
+            BaoCaoDoanhThu_Button.Location = new Point(1624, 7);
+            BaoCaoDoanhThu_Button.Margin = new Padding(7, 7, 7, 7);
+            BaoCaoDoanhThu_Button.Name = "BaoCaoDoanhThu_Button";
+            BaoCaoDoanhThu_Button.Size = new Size(255, 132);
+            BaoCaoDoanhThu_Button.TabIndex = 5;
+            BaoCaoDoanhThu_Button.Text = "Lập báo cáo doanh thu";
+            BaoCaoDoanhThu_Button.UseVisualStyleBackColor = false;
+            BaoCaoDoanhThu_Button.Click += button6_Click;
             // 
-            // button7
+            // ThayDoiQuyDinh_Button
             // 
-            button7.BackColor = SystemColors.ActiveCaptionText;
-            button7.Dock = DockStyle.Fill;
-            button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Location = new Point(795, 3);
-            button7.Name = "button7";
-            button7.Size = new Size(107, 56);
-            button7.TabIndex = 6;
-            button7.Text = "Thay đổi quy định";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            ThayDoiQuyDinh_Button.BackColor = SystemColors.ActiveCaptionText;
+            ThayDoiQuyDinh_Button.Dock = DockStyle.Fill;
+            ThayDoiQuyDinh_Button.ForeColor = SystemColors.ButtonHighlight;
+            ThayDoiQuyDinh_Button.Location = new Point(1893, 7);
+            ThayDoiQuyDinh_Button.Margin = new Padding(7, 7, 7, 7);
+            ThayDoiQuyDinh_Button.Name = "ThayDoiQuyDinh_Button";
+            ThayDoiQuyDinh_Button.Size = new Size(255, 132);
+            ThayDoiQuyDinh_Button.TabIndex = 6;
+            ThayDoiQuyDinh_Button.Text = "Thay đổi quy định";
+            ThayDoiQuyDinh_Button.UseVisualStyleBackColor = false;
+            ThayDoiQuyDinh_Button.Click += button7_Click;
             // 
-            // button9
+            // BaoCaoPhieuNhap_Button
             // 
-            button9.BackColor = SystemColors.ActiveCaptionText;
-            button9.Dock = DockStyle.Fill;
-            button9.Font = new Font("Arial", 9F);
-            button9.ForeColor = SystemColors.ButtonHighlight;
-            button9.Location = new Point(908, 3);
-            button9.Name = "button9";
-            button9.Size = new Size(112, 56);
-            button9.TabIndex = 8;
-            button9.Text = " Báo cáo nhập VTPT";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            BaoCaoPhieuNhap_Button.BackColor = SystemColors.ActiveCaptionText;
+            BaoCaoPhieuNhap_Button.Dock = DockStyle.Fill;
+            BaoCaoPhieuNhap_Button.Font = new Font("Arial", 9F);
+            BaoCaoPhieuNhap_Button.ForeColor = SystemColors.ButtonHighlight;
+            BaoCaoPhieuNhap_Button.Location = new Point(2162, 7);
+            BaoCaoPhieuNhap_Button.Margin = new Padding(7, 7, 7, 7);
+            BaoCaoPhieuNhap_Button.Name = "BaoCaoPhieuNhap_Button";
+            BaoCaoPhieuNhap_Button.Size = new Size(261, 132);
+            BaoCaoPhieuNhap_Button.TabIndex = 8;
+            BaoCaoPhieuNhap_Button.Text = " Báo cáo nhập VTPT";
+            BaoCaoPhieuNhap_Button.UseVisualStyleBackColor = false;
+            BaoCaoPhieuNhap_Button.Click += button9_Click;
             // 
             // tableLayoutPanel2
             // 
@@ -205,11 +215,12 @@
             tableLayoutPanel2.Controls.Add(label3, 2, 0);
             tableLayoutPanel2.Controls.Add(pictureBox1, 3, 0);
             tableLayoutPanel2.Dock = DockStyle.Top;
-            tableLayoutPanel2.Location = new Point(0, 62);
+            tableLayoutPanel2.Location = new Point(0, 146);
+            tableLayoutPanel2.Margin = new Padding(7, 7, 7, 7);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(1023, 55);
+            tableLayoutPanel2.Size = new Size(2430, 129);
             tableLayoutPanel2.TabIndex = 1;
             // 
             // label3
@@ -218,9 +229,10 @@
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Arial", 11F);
             label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(615, 0);
+            label3.Location = new Point(1465, 0);
+            label3.Margin = new Padding(7, 0, 7, 0);
             label3.Name = "label3";
-            label3.Size = new Size(331, 55);
+            label3.Size = new Size(787, 129);
             label3.TabIndex = 4;
             label3.Text = "Trịnh Trần Phương Tuấn";
             label3.TextAlign = ContentAlignment.MiddleRight;
@@ -228,9 +240,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.avatar_icon_blue;
-            pictureBox1.Location = new Point(952, 3);
+            pictureBox1.Location = new Point(2266, 7);
+            pictureBox1.Margin = new Padding(7, 7, 7, 7);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 49);
+            pictureBox1.Size = new Size(119, 115);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -239,21 +252,23 @@
             // 
             pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.manhinhchinh;
-            pictureBox2.Location = new Point(0, 117);
+            pictureBox2.Location = new Point(0, 275);
+            pictureBox2.Margin = new Padding(7, 7, 7, 7);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1023, 333);
+            pictureBox2.Size = new Size(2430, 783);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
             // ManHinhChinh
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(19F, 47F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1023, 450);
+            ClientSize = new Size(2430, 1058);
             Controls.Add(pictureBox2);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
+            Margin = new Padding(7, 7, 7, 7);
             Name = "ManHinhChinh";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ManHinhChinh";
@@ -268,19 +283,19 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button TiepNhanXe_Button;
+        private Button BaoCaoTonKho_Button;
+        private Button VatTuPhuTung_Button;
+        private Button LapPhieuSuaChua_Button;
+        private Button TraCuuXe_Button;
         private TableLayoutPanel tableLayoutPanel2;
         private Label label3;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
+        private Button BaoCaoDoanhThu_Button;
+        private Button ThayDoiQuyDinh_Button;
+        private Button TienCong_Button;
+        private Button BaoCaoPhieuNhap_Button;
     }   
 
 }
