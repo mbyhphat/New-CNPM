@@ -30,7 +30,7 @@ namespace CNPM_GaraOto.UI.ChucNang.TraCuuXe
             if (e.KeyCode == Keys.Enter)
             {
                 e.SuppressKeyPress = true;
-                button1.PerformClick(); // Simulate a button click
+                btn_TraCuuXe.PerformClick(); // Simulate a button click
             }
         }
 

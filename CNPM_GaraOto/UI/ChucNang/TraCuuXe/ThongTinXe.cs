@@ -63,10 +63,10 @@ namespace CNPM_GaraOto.UI.ChucNang.TraCuuXe
             if (thongTinChiTiet != null)
             {
                 txbHoten.Text = thongTinChiTiet["TenChuXe"].ToString();
-                textBox3.Text = thongTinChiTiet["TenHieuXe"].ToString();
+                txb_HieuXe.Text = thongTinChiTiet["TenHieuXe"].ToString();
                 txbDiachi.Text = thongTinChiTiet["DiaChi"].ToString();
                 txbSDT.Text = thongTinChiTiet["SDT"].ToString();
-                textBox6.Text = Convert.ToDateTime(thongTinChiTiet["NgayTiepNhan"]).ToString("dd/MM/yyyy");
+                txb_Ngaytiepnhan.Text = Convert.ToDateTime(thongTinChiTiet["NgayTiepNhan"]).ToString("dd/MM/yyyy");
             }
         }
 
