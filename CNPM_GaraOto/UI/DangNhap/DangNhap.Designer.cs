@@ -31,12 +31,12 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            Username_TextBox = new TextBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            Password_TextBox = new TextBox();
+            Login_Button = new Button();
+            Exit_Button = new Button();
             button_showPassword = new Button();
             button_hidePassword = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -62,7 +62,7 @@
             label1.Font = new Font("Arial", 18F, FontStyle.Bold);
             label1.Location = new Point(553, 67);
             label1.Name = "label1";
-            label1.Size = new Size(315, 35);
+            label1.Size = new Size(633, 70);
             label1.TabIndex = 1;
             label1.Text = "QUẢN LÝ GARA ÔTÔ";
             label1.Click += label1_Click;
@@ -74,20 +74,20 @@
             label2.Font = new Font("Arial", 15F, FontStyle.Bold);
             label2.Location = new Point(661, 149);
             label2.Name = "label2";
-            label2.Size = new Size(162, 30);
+            label2.Size = new Size(325, 59);
             label2.TabIndex = 2;
             label2.Text = "ĐĂNG NHẬP";
             // 
-            // textBox1
+            // Username_TextBox
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.ForeColor = Color.Black;
-            textBox1.Location = new Point(642, 202);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Tên đăng nhập";
-            textBox1.Size = new Size(178, 25);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            Username_TextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Username_TextBox.ForeColor = Color.Black;
+            Username_TextBox.Location = new Point(642, 202);
+            Username_TextBox.Name = "Username_TextBox";
+            Username_TextBox.PlaceholderText = "Tên đăng nhập";
+            Username_TextBox.Size = new Size(178, 42);
+            Username_TextBox.TabIndex = 3;
+            Username_TextBox.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox2
             // 
@@ -112,43 +112,43 @@
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // Password_TextBox
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.ForeColor = Color.Black;
-            textBox2.Location = new Point(642, 251);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.PlaceholderText = "Mật khẩu";
-            textBox2.Size = new Size(178, 25);
-            textBox2.TabIndex = 4;
-            textBox2.TextChanged += textBox2_TextChanged;
+            Password_TextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Password_TextBox.ForeColor = Color.Black;
+            Password_TextBox.Location = new Point(642, 251);
+            Password_TextBox.Name = "Password_TextBox";
+            Password_TextBox.PasswordChar = '*';
+            Password_TextBox.PlaceholderText = "Mật khẩu";
+            Password_TextBox.Size = new Size(178, 42);
+            Password_TextBox.TabIndex = 4;
+            Password_TextBox.TextChanged += textBox2_TextChanged;
             // 
-            // button1
+            // Login_Button
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button1.BackColor = SystemColors.Highlight;
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(611, 310);
-            button1.Name = "button1";
-            button1.Size = new Size(214, 32);
-            button1.TabIndex = 5;
-            button1.Text = "Đăng nhập";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            Login_Button.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Login_Button.BackColor = SystemColors.Highlight;
+            Login_Button.ForeColor = SystemColors.ControlLightLight;
+            Login_Button.Location = new Point(611, 310);
+            Login_Button.Name = "Login_Button";
+            Login_Button.Size = new Size(214, 32);
+            Login_Button.TabIndex = 5;
+            Login_Button.Text = "Đăng nhập";
+            Login_Button.UseVisualStyleBackColor = false;
+            Login_Button.Click += button1_Click;
             // 
-            // button2
+            // Exit_Button
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(611, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(214, 35);
-            button2.TabIndex = 6;
-            button2.Text = "Thoát";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            Exit_Button.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Exit_Button.BackColor = SystemColors.ActiveCaptionText;
+            Exit_Button.ForeColor = SystemColors.ButtonHighlight;
+            Exit_Button.Location = new Point(611, 353);
+            Exit_Button.Name = "Exit_Button";
+            Exit_Button.Size = new Size(214, 35);
+            Exit_Button.TabIndex = 6;
+            Exit_Button.Text = "Thoát";
+            Exit_Button.UseVisualStyleBackColor = false;
+            Exit_Button.Click += button2_Click;
             // 
             // button_showPassword
             // 
@@ -180,18 +180,18 @@
             // 
             // DangNhap
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(17F, 35F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(862, 425);
             Controls.Add(button_hidePassword);
             Controls.Add(button_showPassword);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(Exit_Button);
+            Controls.Add(Login_Button);
             Controls.Add(pictureBox3);
-            Controls.Add(textBox2);
+            Controls.Add(Password_TextBox);
             Controls.Add(pictureBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Username_TextBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -211,12 +211,12 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox Username_TextBox;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private TextBox Password_TextBox;
+        private Button Login_Button;
+        private Button Exit_Button;
         private Button button_showPassword;
         private Button button_hidePassword;
     }

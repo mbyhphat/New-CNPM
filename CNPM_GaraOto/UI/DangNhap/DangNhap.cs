@@ -31,8 +31,8 @@ namespace CNPM_GaraOto.UI.DangNhap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
-            string password = textBox2.Text;
+            string username = Username_TextBox.Text;
+            string password = Password_TextBox.Text;
             if (Login(username, password))
             {
 
@@ -64,19 +64,19 @@ namespace CNPM_GaraOto.UI.DangNhap
 
         private void button_hidePassword_Click(object sender, EventArgs e)
         {
-            if (textBox2.PasswordChar == '*')
+            if (Password_TextBox.PasswordChar == '*')
             {
                 button_showPassword.BringToFront();
-                textBox2.PasswordChar = '\0';
+                Password_TextBox.PasswordChar = '\0';
             };
         }
 
         private void button_showPassword_Click(object sender, EventArgs e)
         {
-            if (textBox2.PasswordChar == '\0')
+            if (Password_TextBox.PasswordChar == '\0')
             {
                 button_hidePassword.BringToFront();
-                textBox2.PasswordChar = '*';
+                Password_TextBox.PasswordChar = '*';
             };
         }
 
