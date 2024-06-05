@@ -62,7 +62,7 @@
             label1.Font = new Font("Arial", 18F, FontStyle.Bold);
             label1.Location = new Point(553, 67);
             label1.Name = "label1";
-            label1.Size = new Size(633, 70);
+            label1.Size = new Size(315, 35);
             label1.TabIndex = 1;
             label1.Text = "QUẢN LÝ GARA ÔTÔ";
             label1.Click += label1_Click;
@@ -74,7 +74,7 @@
             label2.Font = new Font("Arial", 15F, FontStyle.Bold);
             label2.Location = new Point(661, 149);
             label2.Name = "label2";
-            label2.Size = new Size(325, 59);
+            label2.Size = new Size(162, 30);
             label2.TabIndex = 2;
             label2.Text = "ĐĂNG NHẬP";
             // 
@@ -85,7 +85,7 @@
             Username_TextBox.Location = new Point(642, 202);
             Username_TextBox.Name = "Username_TextBox";
             Username_TextBox.PlaceholderText = "Tên đăng nhập";
-            Username_TextBox.Size = new Size(178, 42);
+            Username_TextBox.Size = new Size(178, 25);
             Username_TextBox.TabIndex = 3;
             Username_TextBox.TextChanged += textBox1_TextChanged;
             // 
@@ -120,7 +120,7 @@
             Password_TextBox.Name = "Password_TextBox";
             Password_TextBox.PasswordChar = '*';
             Password_TextBox.PlaceholderText = "Mật khẩu";
-            Password_TextBox.Size = new Size(178, 42);
+            Password_TextBox.Size = new Size(178, 25);
             Password_TextBox.TabIndex = 4;
             Password_TextBox.TextChanged += textBox2_TextChanged;
             // 
@@ -180,8 +180,7 @@
             // 
             // DangNhap
             // 
-            AutoScaleDimensions = new SizeF(17F, 35F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(862, 425);
             Controls.Add(button_hidePassword);
