@@ -50,7 +50,7 @@
             label1.Font = new Font("Arial", 20F);
             label1.Location = new Point(203, 7);
             label1.Name = "label1";
-            label1.Size = new Size(848, 75);
+            label1.Size = new Size(427, 39);
             label1.TabIndex = 0;
             label1.Text = "THAY ĐỔI CÁC QUY ĐỊNH";
             // 
@@ -71,7 +71,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(14, 99);
             label2.Name = "label2";
-            label2.Size = new Size(433, 32);
+            label2.Size = new Size(220, 16);
             label2.TabIndex = 3;
             label2.Text = "Số xe tiếp nhận tối đa trong ngày:";
             // 
@@ -80,7 +80,7 @@
             SoXeTiepNhan_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             SoXeTiepNhan_TextBox.Location = new Point(240, 96);
             SoXeTiepNhan_TextBox.Name = "SoXeTiepNhan_TextBox";
-            SoXeTiepNhan_TextBox.Size = new Size(57, 39);
+            SoXeTiepNhan_TextBox.Size = new Size(57, 23);
             SoXeTiepNhan_TextBox.TabIndex = 4;
             // 
             // LuuSoXe_Button
@@ -115,7 +115,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(14, 64);
             label4.Name = "label4";
-            label4.Size = new Size(183, 32);
+            label4.Size = new Size(92, 16);
             label4.TabIndex = 9;
             label4.Text = "Thêm hiệu xe";
             // 
@@ -124,7 +124,7 @@
             TenHieuXeMoi_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             TenHieuXeMoi_TextBox.Location = new Point(112, 60);
             TenHieuXeMoi_TextBox.Name = "TenHieuXeMoi_TextBox";
-            TenHieuXeMoi_TextBox.Size = new Size(185, 39);
+            TenHieuXeMoi_TextBox.Size = new Size(185, 23);
             TenHieuXeMoi_TextBox.TabIndex = 12;
             // 
             // DanhSachHieuXe_Button
@@ -159,7 +159,7 @@
             TiLeDonGiaNhapBan_TextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             TiLeDonGiaNhapBan_TextBox.Location = new Point(240, 134);
             TiLeDonGiaNhapBan_TextBox.Name = "TiLeDonGiaNhapBan_TextBox";
-            TiLeDonGiaNhapBan_TextBox.Size = new Size(57, 39);
+            TiLeDonGiaNhapBan_TextBox.Size = new Size(57, 23);
             TiLeDonGiaNhapBan_TextBox.TabIndex = 15;
             // 
             // label5
@@ -168,14 +168,13 @@
             label5.AutoSize = true;
             label5.Location = new Point(14, 137);
             label5.Name = "label5";
-            label5.Size = new Size(304, 32);
+            label5.Size = new Size(154, 16);
             label5.TabIndex = 14;
             label5.Text = "Tỉ lệ đơn giá nhập/bán:";
             // 
             // ThayDoiQuyDinh
             // 
-            AutoScaleDimensions = new SizeF(16F, 32F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(806, 354);
             Controls.Add(LuuTiLe_Button);
             Controls.Add(TiLeDonGiaNhapBan_TextBox);

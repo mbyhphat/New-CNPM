@@ -40,7 +40,7 @@
             label1.Font = new Font("Arial", 20F);
             label1.Location = new Point(112, 9);
             label1.Name = "label1";
-            label1.Size = new Size(709, 75);
+            label1.Size = new Size(356, 39);
             label1.TabIndex = 1;
             label1.Text = "Danh sách các hiệu xe";
             // 
@@ -58,8 +58,7 @@
             // 
             // DanhSachHieuXe
             // 
-            AutoScaleDimensions = new SizeF(17F, 35F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(568, 384);
             Controls.Add(DanhSachHieuXe_DtGridView);
             Controls.Add(label1);
